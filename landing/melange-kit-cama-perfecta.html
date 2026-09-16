@@ -160,20 +160,26 @@
     <p style="font-size: 15px; line-height: 1.6; color: #6E675F; margin: 0;">La s&aacute;bana queda estirada de punta a punta, sin arrugas ni pliegues en el medio. Ese acabado tirante de cama de hotel, en tu casa y sin esfuerzo.</p>
   </div>
 
-  <div style="display: flex; flex-wrap: wrap; gap: 14px;">
-    <div style="flex: 1.4 1 300px; box-sizing: border-box; position: relative;">
-      <span style="position: absolute; top: 12px; left: 12px; z-index: 2; background: #24211D; color: #fff; font-size: 11px; font-weight: bold; letter-spacing: 0.05em; text-transform: uppercase; padding: 6px 12px; border-radius: 20px;">Despu&eacute;s</span>
-      <div style="border-radius: 14px; overflow: hidden;">
-        <img src="https://d1a9qnv764bsoo.cloudfront.net/stores/004/057/463/rte/ChatGPT%20Image%2014%20sept%202026,%2004_15_12%20p.m..png" alt="Cama antes y despu&eacute;s de usar el Kit Cama Perfecta" style="display: block; width: 100%; height: auto;" width="1200" height="900" loading="lazy" />
+  <div class="mc-ba-slider" style="position: relative; max-width: 640px; margin: 0 auto; aspect-ratio: 4 / 3; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(36,33,29,.12); background: #DDD3C5;">
+    <!-- DESPU&Eacute;S: capa de fondo, imagen completa -->
+    <img src="https://d1a9qnv764bsoo.cloudfront.net/stores/004/057/463/rte/WhatsApp%20Image%202026-08-27%20at%2022.51.27%20(2).jpeg" alt="Despu&eacute;s: cama tensa y prolija usando Kit Cama Perfecta" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block;" width="900" height="675" loading="lazy" />
+    <!-- ANTES: capa recortada por JS seg&uacute;n la posici&oacute;n de la barra -->
+    <div class="mc-ba-before" style="position: absolute; inset: 0; clip-path: inset(0 50% 0 0);">
+      <img src="https://d1a9qnv764bsoo.cloudfront.net/stores/004/057/463/rte/ChatGPT%20Image%207%20sept%202026,%2011_11_26%20a.m..png" alt="Antes: s&aacute;bana suelta y desprolija" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block;" width="1000" height="1250" loading="lazy" />
+    </div>
+    <!-- Etiquetas fijas -->
+    <span style="position: absolute; top: 14px; left: 14px; z-index: 3; background: rgba(36,33,29,.78); color: #fff; font-size: 11px; font-weight: bold; letter-spacing: 0.05em; text-transform: uppercase; padding: 6px 12px; border-radius: 20px; pointer-events: none;">Antes</span>
+    <span style="position: absolute; top: 14px; right: 14px; z-index: 3; background: #B55F43; color: #fff; font-size: 11px; font-weight: bold; letter-spacing: 0.05em; text-transform: uppercase; padding: 6px 12px; border-radius: 20px; pointer-events: none;">Despu&eacute;s</span>
+    <!-- Barra + manija, se mueven por JS -->
+    <div class="mc-ba-handle" style="position: absolute; top: 0; bottom: 0; left: 50%; width: 0; border-left: 2px solid #fff; transform: translateX(-50%); z-index: 3; pointer-events: none; box-shadow: 0 0 8px rgba(0,0,0,.35);">
+      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 42px; height: 42px; border-radius: 50%; background: #fff; box-shadow: 0 4px 14px rgba(36,33,29,.3); display: flex; align-items: center; justify-content: center;">
+        <span data-mc-icon="dragarrows" data-mc-color="#24211D" data-mc-size="20"></span>
       </div>
     </div>
-    <div style="flex: 1 1 260px; box-sizing: border-box; position: relative;">
-      <div style="border-radius: 14px; overflow: hidden;">
-        <img src="https://d1a9qnv764bsoo.cloudfront.net/stores/004/057/463/rte/WhatsApp%20Image%202026-08-27%20at%2022.51.27%20(2).jpeg" alt="Resultado usando los sujetadores Kit Cama Perfecta" style="display: block; width: 100%; height: auto;" width="900" height="675" loading="lazy" />
-      </div>
-      <p style="font-size: 12.5px; font-weight: bold; color: #6E675F; margin: 8px 0 0; text-align: center;">Resultado real, misma cama y mismo colch&oacute;n.</p>
-    </div>
+    <!-- Input real (invisible) que maneja el arrastre con mouse, touch y teclado -->
+    <input type="range" class="mc-ba-range" min="0" max="100" value="50" aria-label="Deslizar para comparar antes y despu&eacute;s" style="position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; padding: 0; opacity: 0; cursor: ew-resize; -webkit-appearance: none; appearance: none; z-index: 4; background: transparent;" />
   </div>
+  <p style="display: flex; align-items: center; justify-content: center; gap: 6px; text-align: center; font-size: 12.5px; font-weight: bold; color: #6E675F; margin: 14px 0 0;"><span data-mc-icon="dragarrows" data-mc-color="#9A4C33" data-mc-size="14"></span> Arrastr&aacute; para comparar</p>
 </div>
 
 <!-- ======================== BENEFICIO EMOCIONAL ======================== -->
@@ -547,7 +553,8 @@
     chat: '<path d="M4 5h16v11H9l-5 4V5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>',
     lock: '<rect x="5" y="10" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="1.7"/>',
     brush: '<path d="M14 4l6 6-8 8-6-6 8-8Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M6 14l-2 6 6-2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>',
-    play: '<circle cx="12" cy="12" r="9.4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 8.5l6 3.5-6 3.5v-7Z" fill="currentColor"/>'
+    play: '<circle cx="12" cy="12" r="9.4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 8.5l6 3.5-6 3.5v-7Z" fill="currentColor"/>',
+    dragarrows: '<path d="M8 7l-5 5 5 5M16 7l5 5-5 5M3 12h18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>'
   };
 
   function renderIcons() {
@@ -595,6 +602,27 @@
         e.preventDefault();
         target.scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "start" });
       });
+    }
+  }
+
+  /* ---- Slider antes / despues (input type=range real, para mouse, touch y teclado) ---- */
+  function initBeforeAfter() {
+    var sliders = root.querySelectorAll(".mc-ba-slider");
+    for (var i = 0; i < sliders.length; i++) {
+      (function (container) {
+        var range = container.querySelector(".mc-ba-range");
+        var beforeLayer = container.querySelector(".mc-ba-before");
+        var handle = container.querySelector(".mc-ba-handle");
+        if (!range || !beforeLayer || !handle) { return; }
+
+        function update(val) {
+          beforeLayer.style.clipPath = "inset(0 " + (100 - val) + "% 0 0)";
+          handle.style.left = val + "%";
+        }
+
+        range.addEventListener("input", function () { update(this.value); });
+        update(range.value);
+      })(sliders[i]);
     }
   }
 
@@ -703,6 +731,7 @@
     renderIcons();
     initFaq();
     initScroll();
+    initBeforeAfter();
     updateSticky();
     renderCountdown();
     renderStock();
