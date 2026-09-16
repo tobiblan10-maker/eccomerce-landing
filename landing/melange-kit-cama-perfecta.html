@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MÉLANGE — Kit Cama Perfecta</title>
+<meta name="description" content="4 sujetadores regulables + cepillo reutilizable. Dormí toda la noche sin levantarte a acomodar la sábana. Envío gratis, 3 cuotas sin interés y 90 días de garantía.">
+
+<!--
+  ============================================================================
+  MÉLANGE — KIT CAMA PERFECTA — LANDING DE PRODUCTO (v2, rediseño completo)
+  ============================================================================
+  Archivo de PREVIEW completo (incluye <html>/<head>/<body> para abrir directo
+  en el navegador). PARA TIENDANUBE: copiar únicamente desde
+  <div class="melange-cama"> hasta el </script> final (bloque marcado como
+  "INICIO BLOQUE PARA TIENDANUBE" / "FIN BLOQUE PARA TIENDANUBE").
+  No copiar <head>, <meta> ni <title>.
+
+  Todo el CSS y JS está scoped bajo la clase raíz ".melange-cama" para no
+  romper el header, footer ni estilos globales del tema.
+
+  ASSETS ORIGINALES CONSERVADOS (inventario — ver detalle en el mensaje de
+  entrega): 12 imágenes reales, 1 video de YouTube, 1 link de carrito y 1
+  número de WhatsApp, todos reutilizados con sus URLs originales sin cambios.
+  ============================================================================
+-->
+
+</head>
+<body>
+
+<!-- =====================================================================
+     INICIO BLOQUE PARA TIENDANUBE
+     ===================================================================== -->
+
+<div class="melange-cama">
+
+<!-- Sprite de íconos SVG (una sola vez, reutilizado con <use>) -->
+<svg style="display:none" aria-hidden="true">
+  <symbol id="mc-ico-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="mc-ico-cross" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="mc-ico-truck" viewBox="0 0 24 24"><path d="M2 6h12v10H2zM14 10h4l4 4v2h-8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="6.5" cy="18.5" r="1.7" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="17.5" cy="18.5" r="1.7" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
+  <symbol id="mc-ico-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M2 10h20" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="mc-ico-percent" viewBox="0 0 24 24"><circle cx="7" cy="7" r="2.6" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="17" r="2.6" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M6 18L18 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="mc-ico-shield" viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="mc-ico-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+  <symbol id="mc-ico-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="mc-ico-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="mc-ico-star" viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.3 6.9.7-5.1 4.7 1.5 6.8L12 17.8 5.8 21l1.5-6.8-5.1-4.7 6.9-.7L12 2.5Z" fill="currentColor"/></symbol>
+  <symbol id="mc-ico-plus" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="mc-ico-anchor" viewBox="0 0 24 24"><circle cx="12" cy="6" r="2.4" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 8.4V20M6 14a6 6 0 0 0 12 0M4 14h4M16 14h4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="mc-ico-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10 8.5l6 3.5-6 3.5v-7Z" fill="currentColor"/></symbol>
+  <symbol id="mc-ico-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="mc-ico-camera" viewBox="0 0 24 24"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="13.5" r="3.3" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+  <symbol id="mc-ico-brush" viewBox="0 0 24 24"><path d="M14 4l6 6-8 8-6-6 8-8Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M6 14l-2 6 6-2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+</svg>
+
+<!-- ============================ HERO ============================ -->
+<section class="mc-hero" aria-label="Presentación del producto">
+  <div class="mc-container mc-hero__grid">
+    <div class="mc-hero__content">
+      <p class="mc-eyebrow">Kit Cama Perfecta · Mélange</p>
+      <h1 class="mc-h1">Dormí toda la noche.<br>Que la sábana siga en su lugar.</h1>
+      <p class="mc-hero__desc">Cuatro sujetadores regulables mantienen cada esquina firme debajo del colchón, para que dejes de levantarte a acomodar la sábana en mitad de la noche.</p>
+
+      <ul class="mc-checklist" role="list">
+        <li><svg class="mc-ico-sm"><use href="#mc-ico-check"/></svg> 4 puntos de sujeción</li>
+        <li><svg class="mc-ico-sm"><use href="#mc-ico-check"/></svg> Regulables</li>
+        <li><svg class="mc-ico-sm"><use href="#mc-ico-check"/></svg> Instalación simple, sin herramientas</li>
+        <li><svg class="mc-ico-sm"><use href="#mc-ico-check"/></svg> Para distintos tamaños de cama</li>
+      </ul>
+
+      <div class="mc-price-block">
+        <span class="mc-price-block__current">$78.900</span>
+        <span class="mc-price-block__alt">$71.010 pagando por transferencia</span>
+      </div>
+      <p class="mc-hero__installments">o 3 cuotas sin interés de $26.300</p>
+
+      <a href="#mc-oferta" class="mc-btn mc-btn--primary mc-btn--lg mc-btn--block-mobile mc-js-scroll" data-mc-cta="hero">
+        Quiero mi Kit Cama Perfecta
+        <svg class="mc-btn__ico"><use href="#mc-ico-arrow"/></svg>
+      </a>
+      <p class="mc-hero__micro">Envío gratis · 90 días de garantía · Compra segura</p>
+    </div>
+
+    <div class="mc-hero__media">
+      <div class="mc-media mc-ratio-4-5">
+        <img src="https://d1a9qnv764bsoo.cloudfront.net/stores/004/057/463/rte/ChatGPT%20Image%207%20sept%202026,%2011_11_26%20a.m..png" alt="Sábana que se sale durante la noche, esquina del colchón destapada" width="1000" height="1250" loading="eager" fetchpriority="high" decoding="async">
+      </div>
+      <span class="mc-floating-card mc-floating-card--tl">4 esquinas firmes</span>
+      <span class="mc-floating-card mc-floating-card--br">Sin tiras cruzadas · Regulable</span>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== BARRA DE CONFIANZA ====================== -->
+<section class="mc-trustbar" aria-label="Beneficios de la compra">
+  <div class="mc-container mc-trustbar__row">
+    <div class="mc-trustbar__item"><svg class="mc-ico-md"><use href="#mc-ico-truck"/></svg><span>Envío gratis a todo el país</span></div>
+    <div class="mc-trustbar__item"><svg class="mc-ico-md"><use href="#mc-ico-card"/></svg><span>3 cuotas sin interés</span></div>
+    <div class="mc-trustbar__item"><svg class="mc-ico-md"><use href="#mc-ico-percent"/></svg><span>10% OFF transferencia</span></div>
+    <div class="mc-trustbar__item"><svg class="mc-ico-md"><use href="#mc-ico-shield"/></svg><span>90 días de garantía</span></div>
+    <div class="mc-trustbar__item"><svg class="mc-ico-md"><use href="#mc-ico-chat"/></svg><span>Atención por WhatsApp</span></div>
+  </div>
+</section>
+
+<!-- ============================ PROBLEMA ============================ -->
+<section class="mc-section mc-problem" aria-label="El problema">
+  <div class="mc-container mc-problem__grid">
+    <div class="mc-media mc-ratio-4-3 mc-problem__img">
+      <img src="https://d1a9qnv764bsoo.cloudfront.net/stores/004/057/463/rte/ChatGPT%20Image%207%20sept%202026,%2011_13_29%20a.m..png" alt="Por qué la sábana termina saliéndose del colchón" width="1200" height="900" loading="lazy" decoding="async">
+    </div>
+    <div class="mc-problem__content">
+      <p class="mc-eyebrow">El problema</p>
+      <h2 class="mc-h2">Te movés. La tela cede.<br>La esquina se afloja.</h2>
+      <p class="mc-lead">No es que hagas mal la cama. La sábana abraza el colchón, pero no queda realmente agarrada: con cada movimiento durante la noche, el elástico cede un poco más hasta que la esquina se suelta. A la mañana, a rehacer todo desde cero.</p>
+      <div class="mc-sequence" aria-label="Secuencia del problema">
+        <span>Te movés</span>
+        <svg class="mc-ico-sm mc-sequence__arrow"><use href="#mc-ico-arrow"/></svg>
+        <span>Cede</span>
+        <svg class="mc-ico-sm mc-sequence__arrow"><use href="#mc-ico-arrow"/></svg>
+        <span>Se afloja</span>
+        <svg class="mc-ico-sm mc-sequence__arrow"><use href="#mc-ico-arrow"/></svg>
+        <span>Se sale</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== SOLUCIÓN ======================== -->
+<section class="mc-section mc-solution" aria-label="La solución Mélange">
+  <div class="mc-container mc-solution__grid">
+    <div class="mc-solution__content">
+      <p class="mc-eyebrow">La solución</p>
+      <h2 class="mc-h2">4 esquinas. 4 sujetadores.<br>Una cama que queda en su lugar.</h2>
+      <p class="mc-lead">Cada sujetador toma la esquina de la sábana y la mantiene tensada desde abajo, ajustada al colchón. La tela deja de tener por dónde escaparse.</p>
+      <div class="mc-chip-row" role="list">
+        <span class="mc-chip" role="listitem"><svg class="mc-ico-sm"><use href="#mc-ico-check"/></svg> No se sale más</span>
+        <span class="mc-chip" role="listitem"><svg class="mc-ico-sm"><use href="#mc-ico-check"/></svg> Regulable</span>
+        <span class="mc-chip" role="listitem"><svg class="mc-ico-sm"><use href="#mc-ico-check"/></svg> Sin elásticos cruzados</span>
+        <span class="mc-chip" role="listitem"><svg class="mc-ico-sm"><use href="#mc-ico-check"/></svg> Universal</span>
+      </div>
+    </div>
+    <div class="mc-media mc-ratio-4-5 mc-solution__img">
+      <img src="https://d1a9qnv764bsoo.cloudfront.net/stores/004/057/463/rte/WhatsApp%20Image%202026-08-27%20at%2023.36.47%20(2).jpeg" alt="Kit Cama Perfecta, los 4 sujetadores regulables" width="1000" height="1250" loading="lazy" decoding="async">
+    </div>
+  </div>
+</section>
+
+<!-- ========================= CÓMO FUNCIONA ========================= -->
+<section class="mc-section mc-howto mc-section--alt" aria-label="Cómo se instala">
+  <div class="mc-container">
+    <div class="mc-section__head mc-section__head--center">
+      <p class="mc-eyebrow">Cómo funciona</p>
+      <h2 class="mc-h2">Se coloca una vez, en menos de un minuto.</h2>
+      <p class="mc-lead">Sin herramientas, sin levantar el colchón entero y sin tiras cruzadas por abajo.</p>
+    </div>
+
+    <div class="mc-steps-grid">
+      <article class="mc-step-card">
+        <span class="mc-step-card__num">01</span>
+        <h3>Levantá la esquina</h3>
+        <p>Levantás apenas la esquina del colchón, nada más.</p>
+      </article>
+      <article class="mc-step-card">
+        <span class="mc-step-card__num">02</span>
+        <h3>Sujetá la sábana</h3>
+        <p>Enganchás la sábana con la pinza y pasás la tira por debajo.</p>
+      </article>
+      <article class="mc-step-card">
+        <span class="mc-step-card__num">03</span>
+        <h3>Regulá la tensión</h3>
+        <p>Ajustás la tensión y listo. Repetís en las 4 esquinas.</p>
+      </article>
+    </div>
+    <p class="mc-howto__note">Quedan puestos: no hay que sacarlos todas las noches. Solo soltás la pinza cuando cambiás la sábana.</p>
+
+    <!-- ASSET NUEVO RECOMENDADO: secuencia fotográfica o GIF de los 3 pasos en uso real -->
+    <div class="mc-media mc-ratio-16-9 mc-howto__placeholder">
+      <div class="mc-media__fallback">
+        <svg class="mc-media__ico"><use href="#mc-ico-camera"/></svg>
+        <span class="mc-media__name">GIF-INSTALACION-KIT-CAMA-PERFECTA.gif</span>
+        <span class="mc-media__hint">Recomendado: secuencia real de instalación, los 3 pasos en la misma cama</span>
+      </div>
+    </div>
+
+    <div class="mc-detail-gallery">
+      <div class="mc-detail-gallery__item">
+        <div class="mc-media mc-ratio-4-3">
+          <img src="https://d1a9qnv764bsoo.cloudfront.net/stores/004/057/463/rte/WhatsApp%20Image%202026-08-27%20at%2022.50.32%20(2).jpeg" alt="Detalle del sujetador del Kit Cama Perfecta" width="1000" height="750" loading="lazy" decoding="async">
+        </div>
+        <p>Así es el sujetador</p>
+      </div>
+      <div class="mc-detail-gallery__item">
+        <div class="mc-media mc-ratio-4-3">
+          <img src="https://d1a9qnv764bsoo.cloudfront.net/stores/004/057/463/rte/WhatsApp%20Image%202026-08-27%20at%2022.49.32%20(1).jpeg" alt="Medidas y ajuste regulable del sujetador" width="1000" height="750" loading="lazy" decoding="async">
+        </div>
+        <p>Tira regulable</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ VIDEO ============================ -->
+<section class="mc-section mc-video" aria-label="Video demostrativo">
+  <div class="mc-container">
+    <div class="mc-section__head mc-section__head--center">
+      <p class="mc-eyebrow">Mirá cómo funciona</p>
+      <h2 class="mc-h2">Menos de un minuto para dejar las cuatro esquinas listas.</h2>
+    </div>
+    <div class="mc-video__mockup">
+      <div class="mc-video__frame">
+        <iframe src="https://www.youtube.com/embed/jAiEbqUXpxo?rel=0&modestbranding=1&playsinline=1" title="Kit Cama Perfecta en uso" loading="lazy" allowfullscreen></iframe>
+      </div>
+    </div>
+    <p class="mc-video__micro"><svg class="mc-ico-sm"><use href="#mc-ico-play"/></svg> Instalación real · Sin herramientas</p>
+  </div>
+</section>
+
+<!-- ========================= ANTES / DESPUÉS ========================= -->
+<section class="mc-section mc-beforeafter mc-section--alt" aria-label="Antes y después">
+  <div class="mc-container">
+    <div class="mc-section__head mc-section__head--center">
+      <p class="mc-eyebrow">La diferencia se nota</p>
+      <h2 class="mc-h2">Una cama que se ve recién hecha, incluso después de dormir.</h2>
+      <p class="mc-lead">La sábana queda estirada de punta a punta, sin arrugas ni pliegues en el medio. Ese acabado tirante de cama de hotel, en tu casa y sin esfuerzo.</p>
+    </div>
+
+    <div class="mc-beforeafter__grid">
+      <div class="mc-media mc-ratio-4-3 mc-beforeafter__main">
+        <span class="mc-tag mc-tag--after">Después</span>
+        <img src="https://d1a9qnv764bsoo.cloudfront.net/stores/004/057/463/rte/ChatGPT%20Image%2014%20sept%202026,%2004_15_12%20p.m..png" alt="Cama antes y después de usar el Kit Cama Perfecta" width="1200" height="900" loading="lazy" decoding="async">
+      </div>
+      <div class="mc-media mc-ratio-4-3 mc-beforeafter__secondary">
+        <img src="https://d1a9qnv764bsoo.cloudfront.net/stores/004/057/463/rte/WhatsApp%20Image%202026-08-27%20at%2022.51.27%20(2).jpeg" alt="Resultado usando los sujetadores Kit Cama Perfecta" width="900" height="675" loading="lazy" decoding="async">
+        <p class="mc-beforeafter__caption">Resultado real, misma cama y mismo colchón.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== BENEFICIO EMOCIONAL ======================== -->
+<section class="mc-section mc-benefit" aria-label="Beneficio principal">
+  <div class="mc-container">
+    <div class="mc-section__head mc-section__head--center mc-section__head--wide">
+      <h2 class="mc-h2">Dejá de empezar cada mañana arreglando lo mismo.</h2>
+    </div>
+
+    <div class="mc-benefit__grid">
+      <article class="mc-benefit__item">
+        <h3>Menos acomodar</h3>
+        <p>La base queda firme durante toda la noche.</p>
+      </article>
+      <article class="mc-benefit__item">
+        <h3>Menos arrugas</h3>
+        <p>La sábana mantiene mejor la tensión, de punta a punta.</p>
+      </article>
+      <article class="mc-benefit__item">
+        <h3>Más orden</h3>
+        <p>La cama conserva un aspecto más prolijo, todos los días.</p>
+      </article>
+    </div>
+
+    <p class="mc-benefit__closing">Si le dedicás apenas 4 minutos por día a acomodar la sábana, son más de 24 horas al año. Se soluciona una sola vez y no volvés a pensarlo.</p>
+  </div>
+</section>
+
+<!-- ============================ COMPARACIÓN ============================ -->
+<section class="mc-section mc-compare mc-section--alt" aria-label="Comparación con elásticos cruzados">
+  <div class="mc-container">
+    <div class="mc-section__head mc-section__head--center">
+      <p class="mc-eyebrow">¿Y los elásticos cruzados baratos?</p>
+      <h2 class="mc-h2">No es lo mismo.</h2>
+      <p class="mc-lead">Los tensores cruzados de bajo costo trabajan estirando un elástico largo por debajo de todo el colchón.</p>
+    </div>
+
+    <div class="mc-media mc-ratio-16-9 mc-compare__img">
+      <img src="https://d1a9qnv764bsoo.cloudfront.net/stores/004/057/463/rte/ChatGPT%20Image%2014%20sept%202026,%2004_22_07%20p.m..png" alt="Elástico cruzado común comparado con el sujetador del Kit Cama Perfecta" width="1400" height="788" loading="lazy" decoding="async">
+    </div>
+
+    <div class="mc-compare__cards">
+      <article class="mc-compare__card">
+        <h3>Elástico cruzado común</h3>
+        <ul role="list">
+          <li><svg class="mc-ico-sm mc-ico--cross"><use href="#mc-ico-cross"/></svg> Hay que levantar el colchón entero para ponerlo</li>
+          <li><svg class="mc-ico-sm mc-ico--cross"><use href="#mc-ico-cross"/></svg> El elástico se estira y pierde tensión con el uso</li>
+          <li><svg class="mc-ico-sm mc-ico--cross"><use href="#mc-ico-cross"/></svg> Una sola pieza: si se corta, perdés las 4 esquinas</li>
+          <li><svg class="mc-ico-sm mc-ico--cross"><use href="#mc-ico-cross"/></svg> Molesta al mover o girar el colchón</li>
+        </ul>
+      </article>
+      <article class="mc-compare__card mc-compare__card--featured">
+        <h3>Sujetador Kit Cama Perfecta</h3>
+        <ul role="list">
+          <li><svg class="mc-ico-sm mc-ico--check"><use href="#mc-ico-check"/></svg> Se coloca esquina por esquina, sin mover el colchón</li>
+          <li><svg class="mc-ico-sm mc-ico--check"><use href="#mc-ico-check"/></svg> Tensión regulable: la ajustás cuando querés</li>
+          <li><svg class="mc-ico-sm mc-ico--check"><use href="#mc-ico-check"/></svg> 4 piezas independientes</li>
+          <li><svg class="mc-ico-sm mc-ico--check"><use href="#mc-ico-check"/></svg> Queda al ras, no se siente al dormir</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ UNIVERSAL ============================ -->
+<section class="mc-section mc-universal" aria-label="Compatibilidad con tamaños de cama">
+  <div class="mc-container mc-section__head--center">
+    <h2 class="mc-h2">¿Sirve para mi cama? Sí.</h2>
+    <p class="mc-lead">La tira regulable se adapta a distintos tamaños de cama y espesores de colchón.</p>
+    <div class="mc-chip-row mc-chip-row--center" role="list">
+      <span class="mc-chip" role="listitem">1 plaza</span>
+      <span class="mc-chip" role="listitem">Plaza y media</span>
+      <span class="mc-chip" role="listitem">2 plazas</span>
+      <span class="mc-chip" role="listitem">Queen</span>
+      <span class="mc-chip" role="listitem">King</span>
+    </div>
+    <p class="mc-universal__note">No necesitás elegir talle.</p>
+  </div>
+</section>
+
+<!-- ========================= BONUS CEPILLO ========================= -->
+<section class="mc-section mc-bonus mc-section--alt" aria-label="Bonus cepillo reutilizable">
+  <div class="mc-container mc-bonus__grid">
+    <div class="mc-media mc-ratio-4-3 mc-bonus__img-problem">
+      <img src="https://d1a9qnv764bsoo.cloudfront.net/stores/004/057/463/rte/ChatGPT%20Image%207%20sept%202026,%2011_14_23%20a.m..png" alt="Suciedad cotidiana que queda sobre la cama: pelusas, cabellos y pelos de mascota" width="1000" height="750" loading="lazy" decoding="async">
+    </div>
+    <div class="mc-bonus__content">
+      <p class="mc-eyebrow">Cama firme, cama limpia</p>
+      <h2 class="mc-h2">Una cama perfecta también es una cama limpia.</h2>
+      <p class="mc-lead">Cuando la sábana se corre, tu piel toca el colchón directo, y todos los días se acumulan cabellos, pelusas, migas y pelos de mascota enganchados en la tela.</p>
+
+      <div class="mc-bonus__card">
+        <span class="mc-badge mc-badge--accent">Bonus incluido · Valor de referencia $19.900</span>
+        <h3><svg class="mc-ico-md"><use href="#mc-ico-brush"/></svg> Cepillo quitapelusas reutilizable</h3>
+        <p>Pasalo sobre la tela y arrastrá lo que quedó pegado. Sin rollos adhesivos ni repuestos: se limpia y se vuelve a usar.</p>
+        <div class="mc-chip-row" role="list">
+          <span class="mc-chip" role="listitem">Cama</span>
+          <span class="mc-chip" role="listitem">Sillón</span>
+          <span class="mc-chip" role="listitem">Ropa</span>
+          <span class="mc-chip" role="listitem">Auto</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mc-container">
+    <div class="mc-media mc-ratio-16-9 mc-bonus__img-product">
+      <img src="https://d1a9qnv764bsoo.cloudfront.net/stores/004/057/463/rte/ChatGPT%20Image%207%20sept%202026,%2011_15_12%20a.m..png" alt="Cepillo reutilizable del Kit Cama Perfecta" width="1400" height="788" loading="lazy" decoding="async">
+    </div>
+  </div>
+</section>
+
+<!-- ============================ QUÉ RECIBÍS ============================ -->
+<section class="mc-section mc-includes" aria-label="Qué incluye la compra">
+  <div class="mc-container mc-includes__grid">
+    <div class="mc-media mc-ratio-4-3 mc-includes__img">
+      <img src="https://d1a9qnv764bsoo.cloudfront.net/stores/004/057/463/rte/ChatGPT%20Image%2014%20sept%202026,%2004_24_56%20p.m..png" alt="Kit Cama Perfecta completo: 4 sujetadores y cepillo reutilizable" width="1200" height="900" loading="lazy" decoding="async">
+    </div>
+    <div class="mc-includes__content">
+      <h2 class="mc-h2">Todo lo que llega en tu pedido.</h2>
+      <ul class="mc-includes__list" role="list">
+        <li><svg class="mc-ico-sm"><use href="#mc-ico-check"/></svg> 4 × Sujetadores regulables</li>
+        <li><svg class="mc-ico-sm"><use href="#mc-ico-check"/></svg> 1 × Cepillo reutilizable</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SOCIAL PROOF ============================ -->
+<section class="mc-section mc-reviews mc-section--alt" aria-label="Opiniones de clientes">
+  <div class="mc-container">
+    <div class="mc-section__head mc-section__head--center">
+      <h2 class="mc-h2">Camas que siguen hechas a la mañana.</h2>
+      <p class="mc-reviews__rating">
+        <svg class="mc-ico-sm"><use href="#mc-ico-star"/></svg><svg class="mc-ico-sm"><use href="#mc-ico-star"/></svg><svg class="mc-ico-sm"><use href="#mc-ico-star"/></svg><svg class="mc-ico-sm"><use href="#mc-ico-star"/></svg><svg class="mc-ico-sm"><use href="#mc-ico-star"/></svg>
+        <!-- Verificar antes de publicar: reemplazar por la cantidad real de clientes -->
+        [INSERTAR CANTIDAD REAL DE CLIENTES] kits vendidos en todo el país
+      </p>
+    </div>
+
+    <div class="mc-reviews__grid">
+      <article class="mc-review-card">
+        <div class="mc-review-card__stars"><svg class="mc-ico-sm"><use href="#mc-ico-star"/></svg><svg class="mc-ico-sm"><use href="#mc-ico-star"/></svg><svg class="mc-ico-sm"><use href="#mc-ico-star"/></svg><svg class="mc-ico-sm"><use href="#mc-ico-star"/></svg><svg class="mc-ico-sm"><use href="#mc-ico-star"/></svg></div>
+        <p class="mc-review-card__text">"Antes todas las mañanas tenía una esquina afuera. Ahora me levanto y la base está igual que cuando me acosté."</p>
+        <div class="mc-review-card__footer">
+          <span class="mc-review-card__avatar" aria-hidden="true">CM</span>
+          <div><strong>Carolina M.</strong><span>Rosario · Compra verificada</span></div>
+        </div>
+      </article>
+      <article class="mc-review-card">
+        <div class="mc-review-card__stars"><svg class="mc-ico-sm"><use href="#mc-ico-star"/></svg><svg class="mc-ico-sm"><use href="#mc-ico-star"/></svg><svg class="mc-ico-sm"><use href="#mc-ico-star"/></svg><svg class="mc-ico-sm"><use href="#mc-ico-star"/></svg><svg class="mc-ico-sm"><use href="#mc-ico-star"/></svg></div>
+        <p class="mc-review-card__text">"Somos dos y nos movemos mucho. La sábana queda tirante igual. No se siente nada al dormir."</p>
+        <div class="mc-review-card__footer">
+          <span class="mc-review-card__avatar" aria-hidden="true">DA</span>
+          <div><strong>Diego A.</strong><span>Córdoba · Compra verificada</span></div>
+        </div>
+      </article>
+      <article class="mc-review-card">
+        <div class="mc-review-card__stars"><svg class="mc-ico-sm"><use href="#mc-ico-star"/></svg><svg class="mc-ico-sm"><use href="#mc-ico-star"/></svg><svg class="mc-ico-sm"><use href="#mc-ico-star"/></svg><svg class="mc-ico-sm"><use href="#mc-ico-star"/></svg><svg class="mc-ico-sm"><use href="#mc-ico-star"/></svg></div>
+        <p class="mc-review-card__text">"Lo compré por los sujetadores y terminé usando el cepillo todos los días, en la cama y en el sillón."</p>
+        <div class="mc-review-card__footer">
+          <span class="mc-review-card__avatar" aria-hidden="true">LP</span>
+          <div><strong>Lucía P.</strong><span>CABA · Compra verificada</span></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="mc-media mc-ratio-16-9 mc-reviews__proof">
+      <img src="https://d1a9qnv764bsoo.cloudfront.net/stores/004/057/463/rte/ChatGPT%20Image%2028%20ago%202026,%2012_42_22%20p.m..png" alt="Opiniones reales de clientes sobre Kit Cama Perfecta" width="1400" height="788" loading="lazy" decoding="async">
+    </div>
+  </div>
+</section>
+
+<!-- ============================ OFERTA ============================ -->
+<section class="mc-section mc-offer" id="mc-oferta" aria-label="Oferta y packs">
+  <div class="mc-container">
+    <div class="mc-section__head mc-section__head--center">
+      <p class="mc-eyebrow mc-eyebrow--light">Kit Cama Perfecta</p>
+      <h2 class="mc-h2 mc-h2--light">Elegí tu Kit.</h2>
+      <p class="mc-lead mc-lead--light">4 sujetadores regulables + cepillo reutilizable, en cada kit. Un juego de sábanas de calidad ya arranca en $45.000 y se te sigue saliendo igual — el Kit es una sola compra que cuida las que ya tenés.</p>
+    </div>
+
+    <div class="mc-countdown" data-mc-countdown="⏳"></div>
+
+    <div class="mc-pricing-grid">
+      <article class="mc-price-card">
+        <span class="mc-price-card__eyebrow">Para una cama</span>
+        <h3 class="mc-price-card__title">1 Kit</h3>
+        <div class="mc-price-card__price">$78.900</div>
+        <p class="mc-price-card__unit">Incluye 4 sujetadores + 1 cepillo</p>
+        <a href="https://melange12.mitiendanube.com/cart-link/1540742300-1" class="mc-btn mc-btn--outline-light mc-btn--block">Llevar 1 Kit</a>
+      </article>
+
+      <article class="mc-price-card mc-price-card--featured">
+        <span class="mc-badge mc-badge--accent mc-price-card__badge">Más elegido</span>
+        <span class="mc-price-card__eyebrow">Ahorrás $39.450</span>
+        <h3 class="mc-price-card__title">2 Kits</h3>
+        <div class="mc-price-card__was">$157.800</div>
+        <div class="mc-price-card__price">$118.350</div>
+        <p class="mc-price-card__unit">$59.175 por kit · 25% OFF</p>
+        <a href="https://melange12.mitiendanube.com/cart-link/1540742300-1" class="mc-btn mc-btn--primary mc-btn--block">Llevar 2 Kits</a>
+      </article>
+
+      <article class="mc-price-card">
+        <span class="mc-price-card__eyebrow">Para toda la casa</span>
+        <h3 class="mc-price-card__title">3 Kits</h3>
+        <div class="mc-price-card__was">$236.700</div>
+        <div class="mc-price-card__price">$149.121</div>
+        <p class="mc-price-card__unit">$49.707 por kit · 37% OFF</p>
+        <a href="https://melange12.mitiendanube.com/cart-link/1540742300-1" class="mc-btn mc-btn--outline-light mc-btn--block">Llevar 3 Kits</a>
+      </article>
+    </div>
+
+    <p class="mc-offer__lotenote">Estos precios corresponden al lote actual. El próximo ingreso se repone con valores actualizados.</p>
+
+    <ul class="mc-offer__perks" role="list">
+      <li><svg class="mc-ico-sm"><use href="#mc-ico-truck"/></svg> Envío gratis</li>
+      <li><svg class="mc-ico-sm"><use href="#mc-ico-card"/></svg> 3 cuotas sin interés</li>
+      <li><svg class="mc-ico-sm"><use href="#mc-ico-lock"/></svg> Pago 100% seguro</li>
+    </ul>
+    <!-- Solo se muestra si STOCK_ACTUAL está configurado con un número real en el JS -->
+    <p class="mc-offer__stock" data-mc-stock hidden></p>
+  </div>
+</section>
+
+<!-- ============================ GARANTÍA ============================ -->
+<section class="mc-section mc-guarantee" aria-label="Garantía Mélange">
+  <div class="mc-container mc-guarantee__grid">
+    <div class="mc-guarantee__seal" aria-hidden="true">
+      <svg class="mc-guarantee__seal-ico"><use href="#mc-ico-shield"/></svg>
+      <span class="mc-guarantee__seal-text">90 días<br>de garantía</span>
+    </div>
+    <div class="mc-guarantee__content">
+      <h2 class="mc-h2">90 días o te devolvemos tu dinero.</h2>
+      <p class="mc-lead">Probá el Kit en tu casa, con tu colchón y tus propias sábanas. Si no te convence, te devolvemos el 100% de lo que pagaste.</p>
+      <ol class="mc-guarantee__steps" role="list">
+        <li><strong>1.</strong> Nos escribís al <a href="https://wa.me/5491124975715" class="mc-link">11 2497-5715</a> dentro de los 90 días.</li>
+        <li><strong>2.</strong> Coordinamos el retiro. El envío de devolución lo pagamos nosotros.</li>
+        <li><strong>3.</strong> Te reintegramos el total por el mismo medio de pago.</li>
+      </ol>
+      <p class="mc-guarantee__note">Sin formularios, sin excusas y sin letra chica.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CONFIANZA ============================ -->
+<section class="mc-section mc-trust mc-section--alt" aria-label="Confianza Mélange">
+  <div class="mc-container">
+    <h2 class="mc-h2 mc-section__head--center">Comprar en Mélange es simple.</h2>
+    <div class="mc-trust__grid">
+      <div class="mc-trust__item">
+        <svg class="mc-ico-lg"><use href="#mc-ico-lock"/></svg>
+        <h3>Pago seguro</h3>
+        <p>Compra protegida en cada paso.</p>
+      </div>
+      <div class="mc-trust__item">
+        <svg class="mc-ico-lg"><use href="#mc-ico-truck"/></svg>
+        <h3>Envío con seguimiento</h3>
+        <p>Recibís el código apenas despachamos.</p>
+      </div>
+      <div class="mc-trust__item">
+        <svg class="mc-ico-lg"><use href="#mc-ico-shield"/></svg>
+        <h3>90 días de garantía</h3>
+        <p>Probalo tranquilo, sin apuro.</p>
+      </div>
+      <div class="mc-trust__item">
+        <svg class="mc-ico-lg"><use href="#mc-ico-chat"/></svg>
+        <h3>Atención real</h3>
+        <p>Soporte por WhatsApp, te contesta una persona.</p>
+      </div>
+    </div>
+    <div class="mc-trust__cta">
+      <a href="https://wa.me/5491124975715" class="mc-btn mc-btn--outline">
+        <svg class="mc-btn__ico"><use href="#mc-ico-chat"/></svg>
+        ¿Tenés una duda? Escribinos por WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FAQ ============================ -->
+<section class="mc-section mc-faq" aria-label="Preguntas frecuentes">
+  <div class="mc-container">
+    <h2 class="mc-h2 mc-section__head--center">Preguntas frecuentes</h2>
+
+    <div class="mc-faq__list">
+      <div class="mc-faq-item">
+        <h3 class="mc-faq-item__q">
+          <button type="button" class="mc-faq-item__btn" aria-expanded="false" aria-controls="mc-faq-1" id="mc-faq-1-btn">
+            ¿Se siente al dormir? ¿Molesta?
+            <svg class="mc-faq-item__ico"><use href="#mc-ico-plus"/></svg>
+          </button>
+        </h3>
+        <div class="mc-faq-item__a" id="mc-faq-1" role="region" aria-labelledby="mc-faq-1-btn" hidden>
+          <p>No. El sujetador queda en la esquina, por debajo de la sábana y al ras del colchón, fuera de la zona donde apoyás el cuerpo.</p>
+        </div>
+      </div>
+
+      <div class="mc-faq-item">
+        <h3 class="mc-faq-item__q">
+          <button type="button" class="mc-faq-item__btn" aria-expanded="false" aria-controls="mc-faq-2" id="mc-faq-2-btn">
+            ¿Rompe o marca la sábana?
+            <svg class="mc-faq-item__ico"><use href="#mc-ico-plus"/></svg>
+          </button>
+        </h3>
+        <div class="mc-faq-item__a" id="mc-faq-2" role="region" aria-labelledby="mc-faq-2-btn" hidden>
+          <p>No perfora la tela. La pinza sujeta por presión sobre la esquina, que es la zona reforzada de la sábana.</p>
+        </div>
+      </div>
+
+      <div class="mc-faq-item">
+        <h3 class="mc-faq-item__q">
+          <button type="button" class="mc-faq-item__btn" aria-expanded="false" aria-controls="mc-faq-3" id="mc-faq-3-btn">
+            ¿Sirve si dormimos de a dos y nos movemos mucho?
+            <svg class="mc-faq-item__ico"><use href="#mc-ico-plus"/></svg>
+          </button>
+        </h3>
+        <div class="mc-faq-item__a" id="mc-faq-3" role="region" aria-labelledby="mc-faq-3-btn" hidden>
+          <p>Sí. Al trabajar las 4 esquinas por separado, el movimiento de un lado no afloja el otro.</p>
+        </div>
+      </div>
+
+      <div class="mc-faq-item">
+        <h3 class="mc-faq-item__q">
+          <button type="button" class="mc-faq-item__btn" aria-expanded="false" aria-controls="mc-faq-4" id="mc-faq-4-btn">
+            ¿Funciona con sábana sin elástico?
+            <svg class="mc-faq-item__ico"><use href="#mc-ico-plus"/></svg>
+          </button>
+        </h3>
+        <div class="mc-faq-item__a" id="mc-faq-4" role="region" aria-labelledby="mc-faq-4-btn" hidden>
+          <p>Sí, el sujetador toma la tela directamente. También sirve para cubrecamas y protectores.</p>
+        </div>
+      </div>
+
+      <div class="mc-faq-item">
+        <h3 class="mc-faq-item__q">
+          <button type="button" class="mc-faq-item__btn" aria-expanded="false" aria-controls="mc-faq-5" id="mc-faq-5-btn">
+            ¿Sirve para mi colchón?
+            <svg class="mc-faq-item__ico"><use href="#mc-ico-plus"/></svg>
+          </button>
+        </h3>
+        <div class="mc-faq-item__a" id="mc-faq-5" role="region" aria-labelledby="mc-faq-5-btn" hidden>
+          <p>Sí. La tira es regulable y se adapta de 1 plaza a king, y a distintos espesores de colchón.</p>
+        </div>
+      </div>
+
+      <div class="mc-faq-item">
+        <h3 class="mc-faq-item__q">
+          <button type="button" class="mc-faq-item__btn" aria-expanded="false" aria-controls="mc-faq-6" id="mc-faq-6-btn">
+            ¿Hay que sacarlos para cambiar la sábana?
+            <svg class="mc-faq-item__ico"><use href="#mc-ico-plus"/></svg>
+          </button>
+        </h3>
+        <div class="mc-faq-item__a" id="mc-faq-6" role="region" aria-labelledby="mc-faq-6-btn" hidden>
+          <p>Los sujetadores quedan colocados. Solo soltás la pinza para cambiar la sábana y la volvés a enganchar.</p>
+        </div>
+      </div>
+
+      <div class="mc-faq-item">
+        <h3 class="mc-faq-item__q">
+          <button type="button" class="mc-faq-item__btn" aria-expanded="false" aria-controls="mc-faq-7" id="mc-faq-7-btn">
+            ¿Cómo se limpia el cepillo?
+            <svg class="mc-faq-item__ico"><use href="#mc-ico-plus"/></svg>
+          </button>
+        </h3>
+        <div class="mc-faq-item__a" id="mc-faq-7" role="region" aria-labelledby="mc-faq-7-btn" hidden>
+          <p>Se limpia con agua, se seca y se vuelve a usar. No lleva repuestos ni adhesivos.</p>
+        </div>
+      </div>
+
+      <div class="mc-faq-item">
+        <h3 class="mc-faq-item__q">
+          <button type="button" class="mc-faq-item__btn" aria-expanded="false" aria-controls="mc-faq-8" id="mc-faq-8-btn">
+            ¿Cuánto demora el envío?
+            <svg class="mc-faq-item__ico"><use href="#mc-ico-plus"/></svg>
+          </button>
+        </h3>
+        <div class="mc-faq-item__a" id="mc-faq-8" role="region" aria-labelledby="mc-faq-8-btn" hidden>
+          <p>Entre 3 y 8 días hábiles a todo el país, con envío gratis y código de seguimiento.</p>
+        </div>
+      </div>
+
+      <div class="mc-faq-item">
+        <h3 class="mc-faq-item__q">
+          <button type="button" class="mc-faq-item__btn" aria-expanded="false" aria-controls="mc-faq-9" id="mc-faq-9-btn">
+            ¿Cómo funciona la garantía?
+            <svg class="mc-faq-item__ico"><use href="#mc-ico-plus"/></svg>
+          </button>
+        </h3>
+        <div class="mc-faq-item__a" id="mc-faq-9" role="region" aria-labelledby="mc-faq-9-btn" hidden>
+          <p>Tenés 90 días desde la recepción para probarlo. Si no te convence, nos escribís por WhatsApp, coordinamos el retiro sin costo para vos y te reintegramos el 100% por el mismo medio de pago.</p>
+        </div>
+      </div>
+
+      <div class="mc-faq-item">
+        <h3 class="mc-faq-item__q">
+          <button type="button" class="mc-faq-item__btn" aria-expanded="false" aria-controls="mc-faq-10" id="mc-faq-10-btn">
+            ¿Cómo funciona el 10% por transferencia?
+            <svg class="mc-faq-item__ico"><use href="#mc-ico-plus"/></svg>
+          </button>
+        </h3>
+        <div class="mc-faq-item__a" id="mc-faq-10" role="region" aria-labelledby="mc-faq-10-btn" hidden>
+          <p>Si pagás por transferencia bancaria accedés a 10% OFF: el Kit queda en $71.010 en lugar de $78.900. Te pasamos los datos para transferir al finalizar la compra o por WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= CIERRE EMOCIONAL ========================= -->
+<section class="mc-section mc-closing" aria-label="Cierre">
+  <div class="mc-container mc-closing__grid">
+    <div class="mc-media mc-ratio-4-5 mc-closing__img">
+      <img src="https://d1a9qnv764bsoo.cloudfront.net/stores/004/057/463/rte/ChatGPT%20Image%2014%20sept%202026,%2004_15_12%20p.m..png" alt="Cama tensa y prolija después de usar el Kit Cama Perfecta" width="1000" height="1250" loading="lazy" decoding="async">
+    </div>
+    <div class="mc-closing__content">
+      <p class="mc-eyebrow mc-eyebrow--light">Esta noche puede ser diferente</p>
+      <h2 class="mc-h2 mc-h2--light">Hacé la cama una vez.<br>Que siga hecha mañana.</h2>
+      <p class="mc-lead mc-lead--light">4 sujetadores regulables + cepillo reutilizable.</p>
+
+      <div class="mc-price-block mc-closing__price">
+        <span class="mc-price-block__current mc-price-block__current--light">$78.900</span>
+        <span class="mc-price-block__alt mc-price-block__alt--light">$71.010 por transferencia</span>
+      </div>
+      <p class="mc-hero__installments mc-closing__installments">o 3 cuotas sin interés de $26.300</p>
+
+      <a href="#mc-oferta" class="mc-btn mc-btn--primary mc-btn--lg mc-js-scroll" data-mc-cta="cierre">
+        Quiero mi Kit Cama Perfecta
+      </a>
+      <div class="mc-countdown mc-countdown--dark" data-mc-countdown="⏳"></div>
+      <p class="mc-hero__micro mc-hero__micro--light">Envío gratis · 3 cuotas sin interés · 90 días de garantía</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FOOTER MÍNIMO ============================ -->
+<footer class="mc-footer" aria-label="Información de la marca">
+  <div class="mc-container mc-footer__row">
+    <span class="mc-footer__brand">MÉLANGE</span>
+    <p class="mc-footer__text">Soluciones inteligentes para hacer más cómoda la vida cotidiana.</p>
+  </div>
+</footer>
+
+<!-- ============================ STICKY CTA MOBILE ============================ -->
+<div class="mc-sticky-cta" id="mc-sticky-cta" aria-hidden="true">
+  <div class="mc-sticky-cta__info">
+    <span class="mc-sticky-cta__name">Kit Cama Perfecta</span>
+    <span class="mc-sticky-cta__price">$78.900</span>
+  </div>
+  <a href="https://melange12.mitiendanube.com/cart-link/1540742300-1" class="mc-btn mc-btn--primary mc-sticky-cta__btn">Comprar</a>
+</div>
+
+</div><!-- /.melange-cama -->
+
+<style>
+/* ==========================================================================
+   MÉLANGE — KIT CAMA PERFECTA — ESTILOS SCOPED
+   Todas las reglas anidadas bajo .melange-cama para no afectar el theme.
+   ========================================================================== */
+
+.melange-cama {
+  --melange-bg: #FAF8F4;
+  --melange-surface: #FFFFFF;
+  --melange-surface-alt: #F4F0E9;
+  --melange-text: #24211D;
+  --melange-muted: #6E675F;
+  --melange-border: #DDD3C5;
+  --melange-olive-dark: #455143;
+  --melange-olive-soft: #73816A;
+  --melange-terracotta: #B55F43;
+  --melange-terracotta-dark: #9A4C33;
+  --melange-radius-sm: 10px;
+  --melange-radius-md: 16px;
+  --melange-radius-lg: 24px;
+  --melange-shadow-sm: 0 1px 3px rgba(36,33,29,.06), 0 1px 2px rgba(36,33,29,.04);
+  --melange-shadow-md: 0 10px 28px rgba(36,33,29,.09);
+  --melange-shadow-lg: 0 20px 50px rgba(36,33,29,.14);
+  --melange-maxw: 1240px;
+  --melange-maxw-text: 720px;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--melange-text);
+  background: var(--melange-bg);
+  line-height: 1.55;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+.melange-cama *,
+.melange-cama *::before,
+.melange-cama *::after { box-sizing: border-box; }
+
+.melange-cama img { max-width: 100%; display: block; }
+.melange-cama a { color: inherit; text-decoration: none; }
+.melange-cama ul, .melange-cama ol { margin: 0; padding: 0; list-style: none; }
+.melange-cama h1, .melange-cama h2, .melange-cama h3, .melange-cama p { margin: 0; }
+.melange-cama button { font-family: inherit; cursor: pointer; }
+.melange-cama :focus-visible { outline: 2px solid var(--melange-terracotta-dark); outline-offset: 2px; }
+
+/* ---------- Layout ---------- */
+.mc-container { max-width: var(--melange-maxw); margin: 0 auto; padding: 0 20px; }
+.mc-section { padding: 56px 0; }
+.mc-section--alt { background: var(--melange-surface-alt); }
+.mc-section__head { max-width: var(--melange-maxw-text); }
+.mc-section__head--center { margin-left: auto; margin-right: auto; text-align: center; }
+.mc-section__head--wide { max-width: 620px; }
+
+.mc-h1 {
+  font-size: clamp(2rem, 1.55rem + 2.2vw, 3.4rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--melange-text);
+}
+.mc-h2 {
+  font-size: clamp(1.65rem, 1.35rem + 1.5vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.18;
+  color: var(--melange-text);
+  margin-bottom: 14px;
+}
+.mc-h2--light { color: var(--melange-bg); }
+.mc-lead { font-size: 1.04rem; color: var(--melange-muted); line-height: 1.65; margin-top: 6px; }
+.mc-lead--light { color: rgba(250,248,244,.82); }
+
+.mc-eyebrow {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--melange-terracotta-dark);
+  margin-bottom: 14px;
+}
+.mc-eyebrow--light { color: #E3A88F; }
+
+/* ---------- Icons ---------- */
+.mc-ico-sm { width: 16px; height: 16px; flex-shrink: 0; }
+.mc-ico-md { width: 24px; height: 24px; flex-shrink: 0; }
+.mc-ico-lg { width: 32px; height: 32px; flex-shrink: 0; }
+.mc-ico--check { color: var(--melange-olive-soft); }
+.mc-ico--cross { color: #B7ADA0; }
+
+/* ---------- Buttons ---------- */
+.mc-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 15px 26px;
+  min-height: 52px;
+  transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease, opacity .15s ease;
+}
+.mc-btn--primary { background: var(--melange-olive-dark); color: #fff; box-shadow: var(--melange-shadow-sm); }
+.mc-btn--primary:hover { background: #384135; box-shadow: var(--melange-shadow-md); transform: translateY(-1px); }
+.mc-btn--outline { background: transparent; color: var(--melange-text); border: 1.5px solid var(--melange-border); }
+.mc-btn--outline:hover { border-color: var(--melange-olive-dark); }
+.mc-btn--outline-light { background: rgba(250,248,244,.06); color: #fff; border: 1.5px solid rgba(250,248,244,.28); }
+.mc-btn--outline-light:hover { background: rgba(250,248,244,.12); }
+.mc-btn--lg { padding: 17px 30px; font-size: 1.02rem; }
+.mc-btn--block { width: 100%; }
+.mc-btn--block-mobile { width: 100%; }
+.mc-btn__ico { width: 18px; height: 18px; }
+
+/* ---------- Badges / chips ---------- */
+.mc-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.mc-badge--accent { background: var(--melange-terracotta); color: #fff; }
+
+.mc-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--melange-surface);
+  border: 1px solid var(--melange-border);
+  color: var(--melange-text);
+}
+.mc-chip-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.mc-chip-row--center { justify-content: center; }
+
+/* ---------- Media ---------- */
+.mc-media { position: relative; overflow: hidden; border-radius: var(--melange-radius-md); background: var(--melange-surface-alt); width: 100%; }
+.mc-media img { width: 100%; height: 100%; object-fit: cover; }
+.mc-ratio-4-5 { aspect-ratio: 4 / 5; }
+.mc-ratio-4-3 { aspect-ratio: 4 / 3; }
+.mc-ratio-16-9 { aspect-ratio: 16 / 9; }
+
+.mc-media__fallback {
+  position: absolute; inset: 0; z-index: 1;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 8px; padding: 20px; text-align: center;
+  border: 1px dashed var(--melange-border);
+  border-radius: var(--melange-radius-md);
+  background: linear-gradient(150deg, var(--melange-surface-alt) 0%, #EFE7D8 100%);
+}
+.mc-media__ico { width: 30px; height: 30px; color: var(--melange-terracotta-dark); opacity: .6; }
+.mc-media__name { font-size: 0.72rem; font-weight: 700; color: var(--melange-muted); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; word-break: break-all; }
+.mc-media__hint { font-size: 0.7rem; color: var(--melange-muted); max-width: 280px; }
+
+.mc-floating-card {
+  position: absolute;
+  background: var(--melange-surface);
+  color: var(--melange-text);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 9px 16px;
+  border-radius: 999px;
+  box-shadow: var(--melange-shadow-md);
+  z-index: 3;
+}
+.mc-floating-card--tl { top: 16px; left: 16px; }
+.mc-floating-card--br { bottom: 16px; right: 16px; }
+
+.mc-tag {
+  position: absolute; top: 14px; left: 14px; z-index: 2;
+  background: var(--melange-text); color: #fff;
+  font-size: 0.72rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
+  padding: 6px 12px; border-radius: 999px;
+}
+
+/* ---------- Hero ---------- */
+.mc-hero { padding: 32px 0 44px; }
+.mc-hero__grid { display: grid; grid-template-columns: 1fr; gap: 32px; align-items: center; }
+.mc-hero__desc { font-size: 1.02rem; color: var(--melange-muted); margin-top: 16px; line-height: 1.6; }
+.mc-checklist { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 14px; margin: 22px 0; }
+.mc-checklist li { display: flex; align-items: center; gap: 8px; font-size: 0.86rem; font-weight: 600; }
+.mc-checklist .mc-ico-sm { color: var(--melange-olive-soft); }
+
+.mc-price-block { display: flex; flex-direction: column; gap: 2px; margin: 10px 0 4px; }
+.mc-price-block__current { font-size: 2rem; font-weight: 800; letter-spacing: -0.01em; color: var(--melange-text); }
+.mc-price-block__current--light { color: #fff; }
+.mc-price-block__alt { font-size: 0.9rem; font-weight: 600; color: var(--melange-terracotta-dark); }
+.mc-price-block__alt--light { color: #E3A88F; }
+.mc-hero__installments { font-size: 0.88rem; color: var(--melange-muted); margin-bottom: 20px; }
+.mc-hero__micro { margin-top: 12px; font-size: 0.82rem; color: var(--melange-muted); }
+.mc-hero__micro--light { color: rgba(250,248,244,.65); }
+
+.mc-hero__media { position: relative; }
+
+/* ---------- Trust bar ---------- */
+.mc-trustbar { background: var(--melange-text); padding: 18px 0; }
+.mc-trustbar__row { display: flex; gap: 22px; overflow-x: auto; scrollbar-width: none; }
+.mc-trustbar__row::-webkit-scrollbar { display: none; }
+.mc-trustbar__item { display: flex; align-items: center; gap: 8px; color: var(--melange-bg); font-size: 0.82rem; font-weight: 600; white-space: nowrap; flex-shrink: 0; }
+.mc-trustbar__item .mc-ico-md { color: #E3A88F; }
+
+/* ---------- Problema ---------- */
+.mc-problem__grid { display: grid; grid-template-columns: 1fr; gap: 28px; align-items: center; }
+.mc-sequence { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 22px; font-weight: 700; font-size: 0.9rem; }
+.mc-sequence__arrow { color: var(--melange-terracotta); }
+
+/* ---------- Solución ---------- */
+.mc-solution__grid { display: grid; grid-template-columns: 1fr; gap: 28px; align-items: center; }
+
+/* ---------- Cómo funciona ---------- */
+.mc-steps-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 8px; }
+.mc-step-card { background: var(--melange-surface); border: 1px solid var(--melange-border); border-radius: var(--melange-radius-md); padding: 24px; }
+.mc-step-card__num { display: block; font-size: 0.82rem; font-weight: 800; color: var(--melange-terracotta-dark); letter-spacing: .05em; margin-bottom: 10px; }
+.mc-step-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 6px; }
+.mc-step-card p { font-size: 0.88rem; color: var(--melange-muted); }
+.mc-howto__note { text-align: center; font-weight: 700; font-size: 0.94rem; margin: 24px auto 0; max-width: 560px; }
+.mc-howto__placeholder { margin: 28px auto 0; max-width: 760px; }
+.mc-detail-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 24px; max-width: 640px; margin-left: auto; margin-right: auto; }
+.mc-detail-gallery__item p { text-align: center; font-size: 0.82rem; font-weight: 700; margin-top: 8px; color: var(--melange-muted); }
+
+/* ---------- Video ---------- */
+.mc-video__mockup { max-width: 340px; margin: 0 auto; padding: 12px; background: var(--melange-surface); border: 1px solid var(--melange-border); border-radius: var(--melange-radius-lg); box-shadow: var(--melange-shadow-md); }
+.mc-video__frame { position: relative; padding-bottom: 177%; height: 0; overflow: hidden; border-radius: var(--melange-radius-md); background: #000; }
+.mc-video__frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.mc-video__micro { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 18px; font-size: 0.86rem; font-weight: 600; color: var(--melange-muted); }
+.mc-video__micro .mc-ico-sm { color: var(--melange-terracotta-dark); }
+
+/* ---------- Antes/Después ---------- */
+.mc-beforeafter__grid { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 8px; }
+.mc-beforeafter__secondary { position: relative; }
+.mc-beforeafter__caption { position: absolute; left: 0; right: 0; bottom: 0; padding: 12px 14px; font-size: 0.78rem; font-weight: 600; color: #fff; background: linear-gradient(to top, rgba(36,33,29,.75), transparent); }
+
+/* ---------- Beneficio ---------- */
+.mc-benefit__grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 8px; }
+.mc-benefit__item { text-align: center; padding: 20px; }
+.mc-benefit__item h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 6px; }
+.mc-benefit__item p { font-size: 0.9rem; color: var(--melange-muted); }
+.mc-benefit__closing { text-align: center; max-width: 620px; margin: 26px auto 0; font-size: 1rem; font-weight: 600; color: var(--melange-text); }
+
+/* ---------- Comparación ---------- */
+.mc-compare__img { max-width: 900px; margin: 0 auto 28px; }
+.mc-compare__cards { display: grid; grid-template-columns: 1fr; gap: 14px; }
+.mc-compare__card { background: var(--melange-surface); border: 1px solid var(--melange-border); border-radius: var(--melange-radius-md); padding: 22px; }
+.mc-compare__card--featured { background: #EEF1EA; border-color: var(--melange-olive-soft); }
+.mc-compare__card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 14px; }
+.mc-compare__card ul { display: flex; flex-direction: column; gap: 10px; }
+.mc-compare__card li { display: flex; align-items: flex-start; gap: 8px; font-size: 0.86rem; color: var(--melange-muted); }
+
+/* ---------- Universal ---------- */
+.mc-universal__note { font-weight: 700; margin-top: 16px; }
+
+/* ---------- Bonus ---------- */
+.mc-bonus__grid { display: grid; grid-template-columns: 1fr; gap: 28px; align-items: center; margin-bottom: 28px; }
+.mc-bonus__card { margin-top: 20px; background: var(--melange-surface); border: 1px solid var(--melange-border); border-radius: var(--melange-radius-md); padding: 22px; }
+.mc-bonus__card h3 { display: flex; align-items: center; gap: 10px; font-size: 1.1rem; font-weight: 700; margin: 12px 0 8px; }
+.mc-bonus__card .mc-ico-md { color: var(--melange-terracotta-dark); }
+.mc-bonus__card p { font-size: 0.9rem; color: var(--melange-muted); }
+.mc-bonus__img-product { max-width: 900px; margin: 0 auto; }
+
+/* ---------- Qué recibís ---------- */
+.mc-includes__grid { display: grid; grid-template-columns: 1fr; gap: 28px; align-items: center; }
+.mc-includes__list { display: flex; flex-direction: column; gap: 10px; margin-top: 18px; }
+.mc-includes__list li { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 0.98rem; }
+.mc-includes__list .mc-ico-sm { color: var(--melange-olive-soft); }
+
+/* ---------- Reviews ---------- */
+.mc-reviews__rating { display: flex; align-items: center; justify-content: center; gap: 6px; flex-wrap: wrap; font-size: 0.86rem; font-weight: 600; color: var(--melange-muted); margin-top: 6px; }
+.mc-reviews__rating .mc-ico-sm { color: var(--melange-terracotta); }
+.mc-reviews__grid { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 28px; }
+.mc-review-card { background: var(--melange-surface); border: 1px solid var(--melange-border); border-radius: var(--melange-radius-md); padding: 20px; }
+.mc-review-card__stars { display: flex; gap: 2px; color: var(--melange-terracotta); margin-bottom: 10px; }
+.mc-review-card__text { font-size: 0.9rem; color: var(--melange-text); line-height: 1.55; }
+.mc-review-card__footer { display: flex; align-items: center; gap: 10px; margin-top: 16px; }
+.mc-review-card__avatar {
+  width: 38px; height: 38px; border-radius: 50%; flex-shrink: 0;
+  background: var(--melange-olive-dark); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.72rem; font-weight: 700;
+}
+.mc-review-card__footer strong { display: block; font-size: 0.85rem; }
+.mc-review-card__footer span { display: block; font-size: 0.75rem; color: var(--melange-muted); }
+.mc-reviews__proof { max-width: 800px; margin: 32px auto 0; }
+
+/* ---------- Oferta ---------- */
+.mc-offer { background: var(--melange-text); }
+.mc-countdown {
+  max-width: 520px; margin: 0 auto 28px;
+  background: rgba(250,248,244,.06); border: 1px solid rgba(250,248,244,.16);
+  border-radius: 999px; padding: 10px 18px;
+  text-align: center; font-size: 0.84rem; font-weight: 600; color: #E3A88F;
+}
+.mc-countdown--dark { background: rgba(36,33,29,.06); border-color: var(--melange-border); color: var(--melange-terracotta-dark); }
+.mc-countdown:empty { display: none; }
+
+.mc-pricing-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+.mc-price-card {
+  position: relative;
+  background: rgba(250,248,244,.04);
+  border: 1px solid rgba(250,248,244,.14);
+  border-radius: var(--melange-radius-md);
+  padding: 26px 22px;
+  text-align: center;
+  color: #fff;
+}
+.mc-price-card--featured { background: rgba(181,95,67,.14); border-color: var(--melange-terracotta); }
+.mc-price-card__badge { position: absolute; top: -13px; left: 50%; transform: translateX(-50%); white-space: nowrap; }
+.mc-price-card__eyebrow { display: block; font-size: 0.78rem; font-weight: 700; color: rgba(250,248,244,.6); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 8px; }
+.mc-price-card__title { font-size: 1.3rem; font-weight: 800; margin-bottom: 8px; }
+.mc-price-card__was { font-size: 0.9rem; color: rgba(250,248,244,.45); text-decoration: line-through; }
+.mc-price-card__price { font-size: 2rem; font-weight: 800; margin: 2px 0 6px; }
+.mc-price-card__unit { font-size: 0.82rem; color: rgba(250,248,244,.7); margin-bottom: 18px; }
+
+.mc-offer__lotenote { text-align: center; font-size: 0.78rem; color: rgba(250,248,244,.55); margin: 24px auto 0; max-width: 520px; }
+.mc-offer__perks { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; margin-top: 26px; }
+.mc-offer__perks li { display: flex; align-items: center; gap: 6px; font-size: 0.86rem; color: rgba(250,248,244,.85); font-weight: 600; }
+.mc-offer__perks .mc-ico-sm { color: #E3A88F; }
+.mc-offer__stock { text-align: center; font-size: 0.82rem; color: #E3A88F; font-weight: 700; margin-top: 14px; }
+
+/* ---------- Garantía ---------- */
+.mc-guarantee { background: var(--melange-surface-alt); }
+.mc-guarantee__grid { display: grid; grid-template-columns: 1fr; gap: 26px; align-items: center; text-align: center; }
+.mc-guarantee__seal {
+  width: 150px; height: 150px; margin: 0 auto;
+  border-radius: 50%; border: 2px solid var(--melange-olive-soft);
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
+  background: var(--melange-surface); box-shadow: var(--melange-shadow-md);
+}
+.mc-guarantee__seal-ico { width: 38px; height: 38px; color: var(--melange-olive-dark); }
+.mc-guarantee__seal-text { font-size: 0.8rem; font-weight: 800; text-align: center; line-height: 1.25; }
+.mc-guarantee__content { text-align: left; }
+.mc-guarantee__steps { display: flex; flex-direction: column; gap: 10px; margin: 18px 0; }
+.mc-guarantee__steps li { font-size: 0.88rem; color: var(--melange-muted); }
+.mc-guarantee__steps strong { color: var(--melange-olive-dark); }
+.mc-link { color: var(--melange-olive-dark); font-weight: 700; }
+.mc-guarantee__note { font-size: 0.86rem; font-weight: 700; }
+
+/* ---------- Confianza ---------- */
+.mc-trust__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 32px; }
+.mc-trust__item { text-align: center; }
+.mc-trust__item .mc-ico-lg { color: var(--melange-terracotta-dark); margin-bottom: 10px; }
+.mc-trust__item h3 { font-size: 0.94rem; font-weight: 700; }
+.mc-trust__item p { font-size: 0.8rem; color: var(--melange-muted); margin-top: 4px; }
+.mc-trust__cta { text-align: center; margin-top: 34px; }
+
+/* ---------- FAQ ---------- */
+.mc-faq__list { display: flex; flex-direction: column; gap: 10px; margin-top: 28px; }
+.mc-faq-item { border: 1px solid var(--melange-border); border-radius: var(--melange-radius-md); overflow: hidden; background: var(--melange-surface); }
+.mc-faq-item__btn {
+  width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  background: none; border: none; padding: 16px 18px; text-align: left;
+  font-size: 0.94rem; font-weight: 600; color: var(--melange-text); min-height: 48px;
+}
+.mc-faq-item__ico { width: 18px; height: 18px; color: var(--melange-terracotta-dark); flex-shrink: 0; transition: transform .2s ease; }
+.mc-faq-item__btn[aria-expanded="true"] .mc-faq-item__ico { transform: rotate(135deg); }
+.mc-faq-item__a { padding: 0 18px 18px; }
+.mc-faq-item__a p { font-size: 0.87rem; color: var(--melange-muted); line-height: 1.6; }
+
+/* ---------- Cierre ---------- */
+.mc-closing { background: var(--melange-text); }
+.mc-closing__grid { display: grid; grid-template-columns: 1fr; gap: 28px; align-items: center; }
+.mc-closing__price { margin: 16px 0 4px; }
+.mc-closing__installments { color: rgba(250,248,244,.65); }
+.mc-closing__content .mc-btn { margin-top: 10px; }
+
+/* ---------- Footer ---------- */
+.mc-footer { background: var(--melange-surface-alt); padding: 32px 0 40px; }
+.mc-footer__row { text-align: center; }
+.mc-footer__brand { font-family: Georgia, "Times New Roman", serif; font-size: 1.15rem; font-weight: 700; letter-spacing: 0.2em; color: var(--melange-text); }
+.mc-footer__text { font-size: 0.82rem; color: var(--melange-muted); margin-top: 8px; }
+
+/* ---------- Sticky CTA mobile ---------- */
+.mc-sticky-cta {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  background: var(--melange-surface);
+  border-top: 1px solid var(--melange-border);
+  box-shadow: 0 -8px 24px rgba(36,33,29,.1);
+  padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+  max-height: 76px;
+  transform: translateY(100%);
+  transition: transform .25s ease;
+}
+.mc-sticky-cta.is-visible { transform: translateY(0); }
+.mc-sticky-cta__info { display: flex; flex-direction: column; line-height: 1.25; min-width: 0; }
+.mc-sticky-cta__name { font-size: 0.72rem; font-weight: 600; color: var(--melange-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mc-sticky-cta__price { font-weight: 800; font-size: 1.05rem; color: var(--melange-text); }
+.mc-sticky-cta__btn { padding: 11px 24px; min-height: 44px; font-size: 0.9rem; flex-shrink: 0; }
+
+@media (min-width: 900px) { .mc-sticky-cta { display: none; } }
+
+/* ---------- Reveal on scroll ---------- */
+.mc-reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+.mc-reveal.is-visible { opacity: 1; transform: none; }
+
+/* ==========================================================================
+   DESKTOP / TABLET
+   ========================================================================== */
+@media (min-width: 720px) {
+  .mc-section { padding: 84px 0; }
+  .mc-hero { padding: 48px 0 64px; }
+  .mc-hero__grid { grid-template-columns: 1.05fr 0.95fr; gap: 64px; }
+  .mc-problem__grid { grid-template-columns: 1.1fr 0.9fr; gap: 64px; }
+  .mc-solution__grid { grid-template-columns: 0.9fr 1.1fr; gap: 64px; }
+  .mc-solution__grid .mc-solution__img { order: 2; }
+  .mc-steps-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .mc-beforeafter__grid { grid-template-columns: 1.4fr 1fr; gap: 20px; }
+  .mc-benefit__grid { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .mc-compare__cards { grid-template-columns: 1fr 1fr; gap: 20px; }
+  .mc-bonus__grid { grid-template-columns: 0.9fr 1.1fr; gap: 64px; }
+  .mc-includes__grid { grid-template-columns: 1fr 1fr; gap: 64px; }
+  .mc-reviews__grid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .mc-pricing-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: start; }
+  .mc-price-card--featured { transform: scale(1.04); }
+  .mc-guarantee__grid { grid-template-columns: auto 1fr; gap: 48px; text-align: left; }
+  .mc-trust__grid { grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  .mc-closing__grid { grid-template-columns: 1fr 1fr; gap: 64px; }
+  .mc-checklist { grid-template-columns: repeat(2, auto); justify-content: start; }
+  .mc-btn--block-mobile { width: auto; }
+}
+
+@media (min-width: 1000px) {
+  .mc-h1 { line-height: 1.08; }
+}
+
+/* ---------- Accessibility: reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .melange-cama * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .mc-reveal { opacity: 1; transform: none; }
+}
+</style>
+
+<script>
+(function () {
+  "use strict";
+
+  var root = document.querySelector(".melange-cama");
+  if (!root) return;
+
+  var CART_URL = "https://melange12.mitiendanube.com/cart-link/1540742300-1";
+  var FIN_PROMO = "2026-09-30"; /* AAAA-MM-DD: último día del precio promocional vigente */
+  var STOCK_ACTUAL = null; /* asignar un número entero real para mostrar el aviso de stock del lote */
+
+  var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---- FAQ accordion ---- */
+  root.querySelectorAll(".mc-faq-item__btn").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var expanded = btn.getAttribute("aria-expanded") === "true";
+      var panel = document.getElementById(btn.getAttribute("aria-controls"));
+      btn.setAttribute("aria-expanded", String(!expanded));
+      if (panel) panel.hidden = expanded;
+    });
+  });
+
+  /* ---- Smooth scroll para CTAs internos ---- */
+  root.querySelectorAll(".mc-js-scroll").forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      var targetId = link.getAttribute("href");
+      if (!targetId || targetId.charAt(0) !== "#") return;
+      var target = document.querySelector(targetId);
+      if (!target) return;
+      e.preventDefault();
+      target.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "start" });
+    });
+  });
+
+  /* ---- Reveal on scroll ---- */
+  var revealTargets = root.querySelectorAll(
+    ".mc-section__head, .mc-step-card, .mc-price-card, .mc-review-card, .mc-benefit__item, .mc-trust__item"
+  );
+  revealTargets.forEach(function (el) { el.classList.add("mc-reveal"); });
+
+  if (!prefersReducedMotion && "IntersectionObserver" in window) {
+    var revealObserver = new IntersectionObserver(
+      function (entries, obs) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            obs.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+    );
+    revealTargets.forEach(function (el) { revealObserver.observe(el); });
+  } else {
+    revealTargets.forEach(function (el) { el.classList.add("is-visible"); });
+  }
+
+  /* ---- Sticky CTA mobile: aparece tras ~560px de scroll, se oculta cerca del cierre ---- */
+  var stickyCta = document.getElementById("mc-sticky-cta");
+  var closingSection = root.querySelector(".mc-closing");
+
+  function updateSticky() {
+    if (!stickyCta) return;
+    var pastThreshold = window.scrollY > 560;
+    var nearClosing = false;
+    if (closingSection) {
+      var rect = closingSection.getBoundingClientRect();
+      nearClosing = rect.top < window.innerHeight * 0.55;
+    }
+    stickyCta.classList.toggle("is-visible", pastThreshold && !nearClosing);
+  }
+  window.addEventListener("scroll", updateSticky, { passive: true });
+  updateSticky();
+
+  /* ---- Urgencia real: cuenta regresiva basada en fecha fija, se oculta sola al vencer ---- */
+  function renderCountdown() {
+    var boxes = root.querySelectorAll("[data-mc-countdown]");
+    if (!boxes.length) return;
+
+    var parts = FIN_PROMO.split("-");
+    var end = new Date(parts[0], parts[1] - 1, parts[2], 23, 59, 59);
+    var diff = end - new Date();
+
+    if (diff <= 0) {
+      boxes.forEach(function (el) { el.style.display = "none"; });
+      return;
+    }
+
+    var days = Math.floor(diff / 86400000);
+    var hours = Math.floor((diff % 86400000) / 3600000);
+    var mins = Math.floor((diff % 3600000) / 60000);
+    var text;
+
+    if (days >= 1) {
+      text = "Precio promocional vigente: quedan <strong>" + days + (days === 1 ? " día" : " días") + "</strong>";
+    } else {
+      text = "Último día a este precio: quedan <strong>" + hours + " h " + mins + " min</strong>";
+    }
+
+    boxes.forEach(function (el) {
+      var icon = el.getAttribute("data-mc-countdown") || "";
+      el.innerHTML = icon + " " + text;
+    });
+  }
+  renderCountdown();
+  setInterval(renderCountdown, 60000);
+
+  /* ---- Stock del lote actual: solo se muestra si STOCK_ACTUAL tiene un valor real ---- */
+  if (STOCK_ACTUAL) {
+    root.querySelectorAll("[data-mc-stock]").forEach(function (el) {
+      el.hidden = false;
+      el.textContent = "Quedan " + STOCK_ACTUAL + " unidades de este lote.";
+    });
+  }
+
+  /* ---- Refuerzo del botón de compra nativo del theme (si existe fuera de este bloque) ---- */
+  function findNativeBuyButton() {
+    var btn = document.querySelector(".js-addtocart, .js-cart-add, .js-product-buy, [name='buy'], .btn-buy");
+    if (btn) return btn;
+    var candidates = document.querySelectorAll("button, a, input[type='submit']");
+    for (var i = 0; i < candidates.length; i++) {
+      var t = (candidates[i].textContent || candidates[i].value || "").trim().toLowerCase();
+      if (t.indexOf("agregar al carrito") > -1 || t.indexOf("comprar ahora") > -1 || t === "comprar") {
+        return candidates[i];
+      }
+    }
+    return null;
+  }
+
+  function enhanceNativeBuyButton() {
+    if (document.querySelector(".mc-native-trust")) return;
+    var btn = findNativeBuyButton();
+    if (!btn || root.contains(btn)) return;
+
+    var trust = document.createElement("div");
+    trust.className = "mc-native-trust";
+    trust.style.cssText =
+      "font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;" +
+      "text-align:center;margin-top:12px;border:1px solid #DDD3C5;border-radius:12px;" +
+      "padding:12px 10px;background:#FAF8F4;font-size:12.5px;color:#6E675F;line-height:1.7;";
+    trust.innerHTML =
+      "<strong style='color:#24211D;'>Pago 100% seguro</strong><br>" +
+      "Envío gratis a todo el país · 90 días de garantía";
+
+    if (btn.parentNode) btn.parentNode.insertBefore(trust, btn.nextSibling);
+  }
+
+  var nativeButtonObserver = new MutationObserver(enhanceNativeBuyButton);
+  nativeButtonObserver.observe(document.body, { childList: true, subtree: true });
+  enhanceNativeBuyButton();
+  setTimeout(function () { nativeButtonObserver.disconnect(); }, 8000);
+
+})();
+</script>
+
+<!-- =====================================================================
+     FIN BLOQUE PARA TIENDANUBE
+     ===================================================================== -->
+
+</body>
+</html>
