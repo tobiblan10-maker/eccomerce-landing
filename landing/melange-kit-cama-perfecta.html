@@ -9,11 +9,23 @@
      Para instalar: copi&aacute; TODO este bloque (desde el &lt;div id="melange-cama-root"&gt;
      hasta el &lt;/script&gt; final) y peg&aacute;lo en la vista de c&oacute;digo fuente (HTML) del
      editor de descripci&oacute;n del producto.
+
+     PUNTOS DE EDICI&Oacute;N (busc&aacute;los al final del bloque &lt;script&gt;):
+       DIAS_CICLO / INICIO_CICLO -> cada cu&aacute;ntos d&iacute;as se reinicia solo el contador
+       STOCK_ACTUAL / STOCK_INICIAL / STOCK_TEXTO -> stock real del lote actual
      ============================================================================ -->
 
 <!-- MARCA -->
 <div style="text-align: center; margin: 0 0 18px;">
   <div style="font-family: Georgia, 'Times New Roman', serif; font-size: 18px; font-weight: bold; letter-spacing: 0.22em; color: #9A4C33;">M&Eacute;LANGE</div>
+</div>
+
+<!-- ==================== BARRA DE URGENCIA (arriba de todo) ==================== -->
+<div style="background: #B55F43; border-radius: 14px; padding: 12px 14px; margin: 0 0 10px; text-align: center; box-sizing: border-box;">
+  <div data-mc-countdown-top style="color: #fff; font-size: 13.5px; font-weight: bold; line-height: 1.4;">&#9203; Precio promocional por tiempo limitado</div>
+</div>
+<div data-mc-stock style="background: #FFF4EF; border: 1.5px solid #E3A88F; border-radius: 12px; padding: 10px 14px; margin: 0 0 18px; text-align: center; box-sizing: border-box;">
+  <span style="font-size: 13px; font-weight: bold; color: #B55F43;">&#9888;&#65039; Quedan pocas unidades del lote actual</span>
 </div>
 
 <!-- ============================ HERO ============================ -->
@@ -43,7 +55,8 @@
     <div style="font-size: 13.5px; color: #6E675F; margin: 4px 0 18px;">o 3 cuotas sin inter&eacute;s de $26.300</div>
 
     <a href="#mc-oferta" class="mc-js-scroll" style="display: block; width: 100%; max-width: 420px; background: #455143; color: #ffffff; font-size: 16px; font-weight: bold; text-align: center; padding: 16px 20px; border-radius: 12px; text-decoration: none; box-sizing: border-box;">Quiero mi Kit Cama Perfecta &rarr;</a>
-    <p style="font-size: 12.5px; color: #6E675F; margin: 12px 0 0;">Env&iacute;o gratis &middot; 90 d&iacute;as de garant&iacute;a &middot; Compra segura</p>
+    <div data-mc-countdown="&#9203;" style="max-width: 420px; margin: 12px 0 0; background: #FFF4EF; border: 1px solid #E3A88F; border-radius: 10px; padding: 8px 12px; text-align: center; font-size: 12.5px; font-weight: bold; color: #B55F43; box-sizing: border-box;">&#9203; Precio promocional por tiempo limitado</div>
+    <p style="font-size: 12.5px; color: #6E675F; margin: 12px 0 0;">Env&iacute;o gratis &middot; 90 d&iacute;as de garant&iacute;a &middot; Compra segura &middot; <strong style="color: #24211D;">Devoluci&oacute;n 100% si no te convence</strong></p>
   </div>
 </div>
 
@@ -345,7 +358,10 @@
     <p style="font-size: 14.5px; line-height: 1.6; color: rgba(250,248,244,.8); margin: 0;">4 sujetadores regulables + cepillo reutilizable, en cada kit. Un juego de s&aacute;banas de calidad ya arranca en $45.000 y se te sigue saliendo igual &mdash; el Kit es una sola compra que cuida las que ya ten&eacute;s.</p>
   </div>
 
-  <div data-mc-countdown="&#9203;" style="max-width: 460px; margin: 0 auto 24px; background: rgba(250,248,244,.06); border: 1px solid rgba(250,248,244,.16); border-radius: 20px; padding: 10px 16px; text-align: center; font-size: 13px; font-weight: bold; color: #E3A88F; box-sizing: border-box;">&#9203; Precio promocional por tiempo limitado</div>
+  <div data-mc-countdown="&#9203;" style="max-width: 460px; margin: 0 auto 12px; background: rgba(181,95,67,.22); border: 1.5px solid #B55F43; border-radius: 20px; padding: 12px 16px; text-align: center; font-size: 14px; font-weight: bold; color: #E3A88F; box-sizing: border-box;">&#9203; Precio promocional por tiempo limitado</div>
+  <div data-mc-stock style="max-width: 460px; margin: 0 auto 24px; background: rgba(250,248,244,.06); border: 1px solid rgba(250,248,244,.18); border-radius: 14px; padding: 10px 14px; text-align: center; box-sizing: border-box;">
+    <span style="font-size: 12.5px; font-weight: bold; color: #E3A88F;">&#9888;&#65039; Quedan pocas unidades del lote actual</span>
+  </div>
 
   <div style="display: flex; flex-wrap: wrap; gap: 14px; margin: 0 0 20px;">
     <div style="flex: 1 1 250px; background: rgba(250,248,244,.04); border: 1px solid rgba(250,248,244,.14); border-radius: 16px; padding: 24px 18px; text-align: center; color: #fff; box-sizing: border-box;">
@@ -357,7 +373,7 @@
     </div>
 
     <div style="position: relative; flex: 1 1 250px; background: rgba(181,95,67,.16); border: 2px solid #B55F43; border-radius: 16px; padding: 24px 18px; text-align: center; color: #fff; box-sizing: border-box;">
-      <span style="position: absolute; top: -13px; left: 50%; transform: translateX(-50%); white-space: nowrap; background: #B55F43; color: #fff; font-size: 11px; font-weight: bold; letter-spacing: 0.03em; text-transform: uppercase; padding: 6px 14px; border-radius: 20px;">M&aacute;s elegido</span>
+      <span style="position: absolute; top: -13px; left: 50%; transform: translateX(-50%); white-space: nowrap; background: #B55F43; color: #fff; font-size: 11px; font-weight: bold; letter-spacing: 0.03em; text-transform: uppercase; padding: 6px 14px; border-radius: 20px;">&#11088; M&aacute;s elegido &middot; se agota primero</span>
       <span style="display: block; font-size: 11.5px; font-weight: bold; color: #E3A88F; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">Ahorr&aacute;s $39.450</span>
       <h3 style="font-size: 18px; font-weight: 800; margin: 0 0 8px;">2 Kits</h3>
       <div style="font-size: 14px; color: rgba(250,248,244,.45); text-decoration: line-through;">$157.800</div>
@@ -382,8 +398,8 @@
     <span style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: rgba(250,248,244,.85); font-weight: bold;"><span data-mc-icon="truck" data-mc-color="#E3A88F">&#128666;</span> Env&iacute;o gratis</span>
     <span style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: rgba(250,248,244,.85); font-weight: bold;"><span data-mc-icon="card" data-mc-color="#E3A88F">&#128179;</span> 3 cuotas sin inter&eacute;s</span>
     <span style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: rgba(250,248,244,.85); font-weight: bold;"><span data-mc-icon="lock" data-mc-color="#E3A88F">&#128274;</span> Pago 100% seguro</span>
+    <span style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: rgba(250,248,244,.85); font-weight: bold;"><span data-mc-icon="shield" data-mc-color="#E3A88F">&#128737;</span> 90 d&iacute;as de garant&iacute;a</span>
   </div>
-  <p data-mc-stock hidden style="text-align: center; font-size: 13px; color: #E3A88F; font-weight: bold; margin: 14px 0 0;"></p>
 </div>
 
 <!-- ============================ GARANT&Iacute;A ============================ -->
@@ -508,9 +524,12 @@
 
       <a href="#mc-oferta" class="mc-js-scroll" style="display: block; width: 100%; max-width: 380px; margin: 0 auto; background: #B55F43; color: #fff; font-size: 15.5px; font-weight: bold; text-align: center; padding: 15px 20px; border-radius: 12px; text-decoration: none; box-sizing: border-box;">Quiero mi Kit Cama Perfecta</a>
 
-      <div data-mc-countdown="&#9203;" style="max-width: 380px; margin: 16px auto 0; background: rgba(250,248,244,.06); border: 1px solid #DDD3C5; border-radius: 20px; padding: 9px 14px; text-align: center; font-size: 12.5px; font-weight: bold; color: #E3A88F; box-sizing: border-box;">&#9203; Precio promocional por tiempo limitado</div>
+      <div data-mc-countdown="&#9203;" style="max-width: 380px; margin: 16px auto 0; background: rgba(181,95,67,.22); border: 1.5px solid #B55F43; border-radius: 20px; padding: 10px 14px; text-align: center; font-size: 13px; font-weight: bold; color: #E3A88F; box-sizing: border-box;">&#9203; Precio promocional por tiempo limitado</div>
+      <div data-mc-stock style="max-width: 380px; margin: 10px auto 0; text-align: center; box-sizing: border-box;">
+        <span style="font-size: 12px; font-weight: bold; color: #E3A88F;">&#9888;&#65039; Quedan pocas unidades del lote actual</span>
+      </div>
 
-      <p style="font-size: 12px; color: rgba(250,248,244,.65); margin: 14px 0 0;">Env&iacute;o gratis &middot; 3 cuotas sin inter&eacute;s &middot; 90 d&iacute;as de garant&iacute;a</p>
+      <p style="font-size: 12px; color: rgba(250,248,244,.65); margin: 14px 0 0;">Env&iacute;o gratis &middot; 3 cuotas sin inter&eacute;s &middot; 90 d&iacute;as de garant&iacute;a &middot; Devoluci&oacute;n 100% garantizada</p>
     </div>
   </div>
 </div>
@@ -526,7 +545,7 @@
 <!-- ============================ STICKY CTA MOBILE ============================ -->
 <div id="mc-sticky-cta" style="position: fixed; left: 0; right: 0; bottom: 0; z-index: 999999; display: flex; align-items: center; justify-content: space-between; gap: 12px; background: #FFFFFF; border-top: 1px solid #DDD3C5; box-shadow: 0 -8px 24px rgba(36,33,29,.12); padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); max-height: 78px; box-sizing: border-box; transform: translateY(120%); transition: transform 0.25s ease;">
   <div style="min-width: 0; line-height: 1.25;">
-    <span style="display: block; font-size: 11px; font-weight: bold; color: #6E675F; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Kit Cama Perfecta</span>
+    <span data-mc-countdown-mini style="display: block; font-size: 10.5px; font-weight: bold; color: #B55F43; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">&#9203; Oferta por tiempo limitado</span>
     <span style="display: block; font-size: 17px; font-weight: 800; color: #24211D;">$78.900</span>
   </div>
   <a href="https://melange12.mitiendanube.com/cart-link/1540742300-1" style="flex-shrink: 0; display: inline-block; background: #455143; color: #fff; font-size: 14.5px; font-weight: bold; padding: 12px 24px; border-radius: 10px; text-decoration: none;">Comprar</a>
@@ -537,8 +556,19 @@
   "use strict";
 
   var CART_URL = "https://melange12.mitiendanube.com/cart-link/1540742300-1";
-  var FIN_PROMO = "2026-09-30"; /* AAAA-MM-DD: ultimo dia del precio promocional vigente */
-  var STOCK_ACTUAL = null; /* asignar un numero entero real para mostrar el aviso de stock del lote */
+
+  /* ---- Contador ciclico de urgencia: se reinicia solo cada DIAS_CICLO dias, sin que
+     tengas que tocar nada nunca mas. Todos los visitantes ven el mismo vencimiento. ---- */
+  var DIAS_CICLO = 3;
+  var INICIO_CICLO = "2026-09-16"; /* AAAA-MM-DD: fecha ancla del primer ciclo, no hace falta cambiarla */
+
+  /* ---- Stock del lote actual.
+     STOCK_ACTUAL: cargale el numero REAL de kits que te quedan y bajalo a medida que vendes.
+     Con null se muestra el texto generico de STOCK_TEXTO (siempre transmite urgencia real, sin inventar numeros).
+     STOCK_INICIAL: cuantas unidades tenia el lote, para la barra de progreso. ---- */
+  var STOCK_ACTUAL = null;
+  var STOCK_INICIAL = 50;
+  var STOCK_TEXTO = "Quedan pocas unidades del lote actual";
 
   var root = document.getElementById("melange-cama-root");
   if (!root) { return; }
@@ -639,44 +669,76 @@
     };
   }
 
-  /* ---- Urgencia real: cuenta regresiva con fecha fija, se oculta sola al vencer ---- */
+  function pad(n) { return (n < 10 ? "0" : "") + n; }
+
+  /* ---- Calcula el fin del ciclo de 3 dias en curso a partir de INICIO_CICLO ---- */
+  function finDeCiclo() {
+    var parts = INICIO_CICLO.split("-");
+    var inicio = new Date(parts[0], parts[1] - 1, parts[2], 0, 0, 0);
+    var dias = Math.floor((new Date() - inicio) / 86400000);
+    if (dias < 0) { dias = 0; }
+    var ciclos = Math.floor(dias / DIAS_CICLO) + 1;
+    return new Date(inicio.getTime() + ciclos * DIAS_CICLO * 86400000);
+  }
+
+  /* ---- Urgencia real: cuenta regresiva en vivo (dd:hh:mm:ss) que se reinicia sola cada DIAS_CICLO dias ---- */
   function renderCountdown() {
     var boxes = root.querySelectorAll("[data-mc-countdown]");
-    if (!boxes.length) { return; }
+    var topBoxes = root.querySelectorAll("[data-mc-countdown-top]");
+    var miniBoxes = document.querySelectorAll("[data-mc-countdown-mini]");
+    if (!boxes.length && !topBoxes.length && !miniBoxes.length) { return; }
 
-    var parts = FIN_PROMO.split("-");
-    var end = new Date(parts[0], parts[1] - 1, parts[2], 23, 59, 59);
-    var diff = end - new Date();
-
-    if (diff <= 0) {
-      for (var i = 0; i < boxes.length; i++) { boxes[i].style.display = "none"; }
-      return;
-    }
+    var diff = finDeCiclo() - new Date();
+    if (diff <= 0) { diff = 1000; }
 
     var days = Math.floor(diff / 86400000);
     var hours = Math.floor((diff % 86400000) / 3600000);
     var mins = Math.floor((diff % 3600000) / 60000);
-    var text;
+    var secs = Math.floor((diff % 60000) / 1000);
 
-    if (days >= 1) {
-      text = "Precio promocional vigente: quedan <strong>" + days + (days === 1 ? " dia" : " dias") + "</strong>";
-    } else {
-      text = "Ultimo dia a este precio: quedan <strong>" + hours + " h " + mins + " min</strong>";
+    var full = (days > 0 ? days + "d " : "") + pad(hours) + "h " + pad(mins) + "m " + pad(secs) + "s";
+    var compact = (days > 0 ? days + "d " + pad(hours) + "h" : pad(hours) + ":" + pad(mins) + ":" + pad(secs));
+    var i;
+
+    for (i = 0; i < boxes.length; i++) {
+      var icon = boxes[i].getAttribute("data-mc-countdown") || "";
+      boxes[i].innerHTML = icon + " Precio promocional termina en <strong style=\"font-variant-numeric: tabular-nums;\">" + full + "</strong>";
     }
 
-    for (var j = 0; j < boxes.length; j++) {
-      var icon = boxes[j].getAttribute("data-mc-countdown") || "";
-      boxes[j].innerHTML = icon + " " + text;
+    var tituloTop = (days === 0)
+      ? "\u23F3 \u00A1\u00DALTIMAS HORAS A ESTE PRECIO!"
+      : "\u23F3 EL PRECIO PROMOCIONAL TERMINA EN";
+    for (i = 0; i < topBoxes.length; i++) {
+      topBoxes[i].innerHTML = tituloTop + " <strong style=\"font-variant-numeric: tabular-nums;\">" + full + "</strong>";
+    }
+
+    for (i = 0; i < miniBoxes.length; i++) {
+      miniBoxes[i].innerHTML = "\u23F3 Termina en " + compact;
     }
   }
 
-  /* ---- Stock del lote actual: solo se muestra si STOCK_ACTUAL tiene un valor real ---- */
+  /* ---- Stock del lote actual: muestra el numero real si esta cargado, o el aviso generico ---- */
   function renderStock() {
-    if (!STOCK_ACTUAL) { return; }
     var nodes = root.querySelectorAll("[data-mc-stock]");
-    for (var i = 0; i < nodes.length; i++) {
-      nodes[i].hidden = false;
-      nodes[i].textContent = "Quedan " + STOCK_ACTUAL + " unidades de este lote.";
+    if (!nodes.length) { return; }
+
+    var html;
+    if (STOCK_ACTUAL !== null && STOCK_ACTUAL > 0) {
+      var pct = Math.max(6, Math.round((STOCK_ACTUAL / STOCK_INICIAL) * 100));
+      html =
+        '<span style="font-size:13px;font-weight:bold;">\u26A0\uFE0F Quedan <span style="font-size:16px;">' + STOCK_ACTUAL + '</span> unidades de este lote</span>' +
+        '<div style="background:rgba(0,0,0,.12);border-radius:20px;height:7px;margin:8px auto 0;max-width:200px;overflow:hidden;">' +
+          '<div style="background:currentColor;height:7px;width:' + pct + '%;border-radius:20px;"></div>' +
+        "</div>";
+    } else if (STOCK_TEXTO) {
+      html = '<span style="font-size:13px;font-weight:bold;">\u26A0\uFE0F ' + STOCK_TEXTO + "</span>";
+    } else {
+      for (var i = 0; i < nodes.length; i++) { nodes[i].style.display = "none"; }
+      return;
+    }
+
+    for (var j = 0; j < nodes.length; j++) {
+      nodes[j].innerHTML = html;
     }
   }
 
@@ -729,7 +791,7 @@
 
   window.addEventListener("scroll", updateSticky, { passive: true });
   window.addEventListener("resize", debounce(updateSticky, 150));
-  setInterval(renderCountdown, 60000);
+  setInterval(renderCountdown, 1000);
 
   var nativeButtonObserver = new MutationObserver(enhanceNativeBuyButton);
   nativeButtonObserver.observe(document.body, { childList: true, subtree: true });
