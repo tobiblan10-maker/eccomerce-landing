@@ -41,15 +41,32 @@
         tarjetas de oferta, seccion 16. Cuando me pases esa foto, descomentá ese
         bloque y pegá la URL.
 
-     4) FORMATO DE IMAGEN: las 4 imagenes nuevas estan en .png tal como las
+     4) FOTO DE LIFESTYLE (seccion 12): la cambié por la grilla 2x2 (oficina /
+        oficina / gimnasio / plaza) que me pasaste — encaja perfecto con el texto
+        "Oficina, facultad, gimnasio o una plaza". Me llegó como archivo, no como
+        link, asi que el <img> de esa seccion tiene un placeholder
+        src="URL_DE_TU_FOTO_LIFESTYLE_NUEVA". Subila al editor de descripcion de
+        Tiendanube (Insertar imagen / arrastrarla ahi) para que te genere su URL
+        y pegala en ese src.
+
+     5) FORMATO DE IMAGEN: las imagenes nuevas estan en .png tal como las
         subiste. Para que pesen menos en mobile, lo ideal es re-exportarlas o
         resubirlas como .webp (Tiendanube lo hace automatico con algunas subidas,
         o podés usar un optimizador como squoosh.app) y despues reemplazar esas
-        4 URLs por las .webp.
+        URLs por las .webp.
 
-     5) Reemplazar los datos de RESEÑAS (seccion 14) y la FECHA LIMITE de la promo
-        (seccion 16, "DOMINGO DD/MM") por informacion real. Ver comentarios en cada
-        bloque para el detalle.
+     6) RESEÑAS (seccion 14): seguimos con los placeholders para que cargues
+        reseñas REALES — no agregué reseñas ni capturas de WhatsApp inventadas.
+        Ver la nota del chat para el detalle de por qué, y alternativas honestas
+        de todos modos generan confianza sin reseñas falsas.
+
+     7) BLOQUE DE CONFIANZA JUNTO AL BOTON DE COMPRA: es un archivo aparte,
+        melange-kit-lunch-trust-snippet.html — no va en esta descripcion, va en
+        el campo de tu tema que se muestra pegado al boton "Agregar al carrito"
+        (normalmente "Descripcion corta"). Ver instrucciones dentro de ese archivo.
+
+     8) Reemplazar la FECHA LIMITE de la promo (seccion 16, "DOMINGO DD/MM")
+        por informacion real. Ver comentario en ese bloque.
 
      Sin <style>, sin <script>, sin fuentes externas, sin media queries.
      Todo responsive con clamp() + flex-wrap para sobrevivir al editor.
@@ -223,7 +240,7 @@
 </div>
 <!-- ═══════════ 12 · LIFESTYLE ═══════════ -->
 <div style="padding: clamp(48px,7vw,76px) 0 clamp(40px,6vw,64px);">
-<div style="max-width: 1120px; margin: 0 auto; padding: 0 22px;"><img style="width: 100%; height: auto; display: block; border-radius: 26px;" src="https://d1a9qnv764bsoo.cloudfront.net/stores/004/057/463/rte/blobid12.jpg" alt="Amigas disfrutando su comida al aire libre con el Kit Lunch Melange" loading="lazy" />
+<div style="max-width: 1120px; margin: 0 auto; padding: 0 22px;"><!-- Reemplazada la foto de las amigas por la nueva grilla 2x2 (oficina/oficina/gimnasio/plaza) que me pasaste — encaja perfecto con el texto de abajo. Todavia no tengo una URL publica para esa imagen (me llego como archivo, no como link). Subila al editor de descripcion de Tiendanube (Insertar imagen o arrastrarla ahi, en cualquier parte) para que TN te genere su URL en su CDN, y pegala en el src de aca abajo. --><img style="width: 100%; height: auto; display: block; border-radius: 26px;" src="URL_DE_TU_FOTO_LIFESTYLE_NUEVA" alt="Grilla de 4 fotos: usando el Kit Lunch Melange en la oficina, en la facultad, en el gimnasio y en la plaza" loading="lazy" />
 <p style="text-align: center; font-family: 'Fraunces',Georgia,serif; font-style: italic; font-size: clamp(17px,2.8vw,23px); color: #4f5d3e; margin: 22px auto 0; max-width: 32ch;">Oficina, facultad, gimnasio o una plaza. Va donde vayas.</p>
 </div>
 </div>
