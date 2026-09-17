@@ -5,28 +5,49 @@
      Oferta ancla: PACK X2 -> el 2do Kit con 50% OFF ($128.850 el pack, ahorras $42.950)
      Garantia: 90 dias
 
-     ANTES DE PUBLICAR — 2 ACCIONES OBLIGATORIAS:
+     ANTES DE PUBLICAR — REVISAR ESTO:
 
-     1) Esta pagina ahora tiene DOS botones de compra reales (antes habia uno solo),
-        porque hay DOS productos distintos para vender: el Kit suelto y el Pack x2.
-        Tiendanube no aplica descuentos automaticos por cantidad sin una app, asi que
-        lo mas simple es cargar el Pack x2 como un producto o variante aparte con el
-        precio final ya calculado ($128.900... en este caso $128.850) cargado directo.
+     1) LINK DE COMPRA: todos los botones principales ya apuntan a
+        https://melange12.mitiendanube.com/productos/frasco-ensaladero-hermetico-mas-cubiertos-3-piezas-mas-estuche-de-silicona-zmtrn/
+        ⚠️ OJO: es el MISMO link en el boton "Comprar 1 Kit" y en "Comprar el Pack x2"
+        porque solo me diste una URL. Tiendanube no aplica el 50% del 2do kit
+        automaticamente sin una app o un producto/variante aparte, asi que hoy el
+        boton del Pack x2 lleva a la clienta al mismo producto individual (compraria
+        1 unidad al precio de lista, no el pack con descuento). Cuando tengas el
+        Pack x2 cargado como producto o variante propia, reemplaza el href de ESE
+        boton (buscalo por el texto "Comprar el Pack x2", seccion 16) por su URL real.
+        Los enlaces de texto internos ("Mirá el Pack x2...", dentro de parrafos) se
+        dejaron apuntando a #mlg-oferta para que sigan haciendo scroll dentro de la
+        misma pagina en vez de sacar a la clienta antes de tiempo.
 
-        Buscar y reemplazar TODAS las apariciones de:
-           #mlg-link-unidad   (dentro de botones data-cta="unidad")
-             -> por la URL real de compra del Kit suelto ($85.900)
-                https://TUTIENDA.com.ar/comprar/?add_to_cart=ID_VARIANTE_UNIDAD
+     2) IMAGENES NUEVAS: reubique las fotos que subiste (estaban pegadas sueltas en
+        el bloque "Hacé la cuenta") en las secciones 3, 6, 9 y 11. No pude previsualizar
+        el contenido real de cada imagen (este entorno bloquea la descarga desde tu
+        CDN), asi que las ubique por proporcion/dimension:
+           - Seccion 3 (el problema)      -> imagen 600x750 ("07_10_41 p.m.")
+           - Seccion 6 (el mecanismo)     -> imagen 400x500 ("07_13_47 p.m.")
+           - Seccion 9 (los 3 pasos)      -> imagen 400x1402 (secuencia vertical)
+           - Seccion 11 (antes/despues)   -> imagen 300x701 (comparativa)
+        Si alguna quedo cambiada, es un solo <img src="..."> por seccion: buscalo y
+        reemplaza la URL, no hace falta tocar nada mas del bloque.
+        NO usé la imagen de 114x800 ("07_30_25 p.m.") porque esa proporcion es
+        demasiado angosta para verse bien como foto de seccion — probablemente sea
+        un export mal recortado; revisala antes de usarla en algún lado.
+        Tampoco usé las dos imagenes .webp de "products/" (parecen fotos del
+        producto ya cargadas en junio, no las nuevas de esta tanda) — avisame si
+        alguna de esas es la que va en el Pack x2.
 
-           #mlg-link-pack2    (dentro de botones data-cta="pack2")
-             -> por la URL real de compra del Pack x2 ($128.850)
-                https://TUTIENDA.com.ar/comprar/?add_to_cart=ID_VARIANTE_PACK2
+     3) FOTO DEL PACK X2: dejé el lugar preparado (comentado) justo antes de las
+        tarjetas de oferta, seccion 16. Cuando me pases esa foto, descomentá ese
+        bloque y pegá la URL.
 
-        Los demas botones de la pagina ya apuntan a #mlg-oferta (hacen scroll al
-        bloque donde la clienta elige entre las dos opciones) y funcionan tal cual,
-        no hace falta tocarlos.
+     4) FORMATO DE IMAGEN: las 4 imagenes nuevas estan en .png tal como las
+        subiste. Para que pesen menos en mobile, lo ideal es re-exportarlas o
+        resubirlas como .webp (Tiendanube lo hace automatico con algunas subidas,
+        o podés usar un optimizador como squoosh.app) y despues reemplazar esas
+        4 URLs por las .webp.
 
-     2) Reemplazar los datos de RESEÑAS (seccion 14) y la FECHA LIMITE de la promo
+     5) Reemplazar los datos de RESEÑAS (seccion 14) y la FECHA LIMITE de la promo
         (seccion 16, "DOMINGO DD/MM") por informacion real. Ver comentarios en cada
         bloque para el detalle.
 
@@ -60,43 +81,21 @@
 </div>
 <div style="margin-top: 14px; padding-top: 14px; border-top: 1px dashed rgba(79,93,62,.35); font-size: 13.5px; color: #4f5d3e; font-weight: 600;">🔥 &iquest;Son 2 en casa? Llev&aacute; el <a href="#mlg-oferta" style="color: #4f5d3e; text-decoration: underline;">Pack x2 y el segundo Kit sale 50% OFF</a></div>
 </div>
-<a style="display: block; width: 100%; text-align: center; font-weight: 600; font-size: clamp(15.5px,2.4vw,17px); padding: 19px 28px; border-radius: 100px; color: #fff; background: #3E4A2F; text-decoration: none; box-sizing: border-box; letter-spacing: .01em;" href="#mlg-oferta"> Quiero mi Kit Lunch &mdash; Env&iacute;o gratis </a>
+<a style="display: block; width: 100%; text-align: center; font-weight: 600; font-size: clamp(15.5px,2.4vw,17px); padding: 19px 28px; border-radius: 100px; color: #fff; background: #3E4A2F; text-decoration: none; box-sizing: border-box; letter-spacing: .01em;" href="https://melange12.mitiendanube.com/productos/frasco-ensaladero-hermetico-mas-cubiertos-3-piezas-mas-estuche-de-silicona-zmtrn/"> Quiero mi Kit Lunch &mdash; Env&iacute;o gratis </a>
 <p style="font-size: 12.5px; color: #8e9184; text-align: center; margin: 12px 0 0;">Compr&aacute; antes de las 14:00 y sale hoy mismo &middot; Env&iacute;o gratis &middot; Garant&iacute;a de 90 d&iacute;as &middot; Pago 100% protegido</p>
 </div>
 </div>
 </div>
-<!-- ═══════════ 3 · IDENTIFICACION CON EL PROBLEMA ═══════════ -->
+<!-- ═══════════ 3+4 · EL PROBLEMA (imagen protagonista) ═══════════ -->
 <div style="background: #fff; border-top: 1px solid rgba(36,38,29,.09); border-bottom: 1px solid rgba(36,38,29,.09); padding: clamp(48px,7vw,76px) 0;">
 <div style="max-width: 1120px; margin: 0 auto; padding: 0 22px;">
-<div style="max-width: 620px; margin: 0 auto clamp(30px,4vw,46px); text-align: center;"><span style="font-size: 11.5px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #6b7b55; display: block; margin-bottom: 14px;">Son las 12:30</span>
+<div style="max-width: 620px; margin: 0 auto clamp(26px,4vw,36px); text-align: center;"><span style="font-size: 11.5px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #6b7b55; display: block; margin-bottom: 14px;">Son las 12:30</span>
 <h2 style="font-family: 'Fraunces',Georgia,serif; font-weight: 500; font-size: clamp(27px,5vw,42px); line-height: 1.09; letter-spacing: -.015em; margin: 0; color: #24261d;">Siempre termina igual.</h2>
 </div>
-<div style="display: flex; flex-wrap: wrap; gap: 14px; max-width: 920px; margin: 0 auto;">
-<div style="flex: 1 1 260px; min-width: min(100%,240px); background: #FAF7F1; border: 1px solid rgba(36,38,29,.09); border-radius: 20px; padding: 26px 24px;"><span style="display: block; font-family: 'Fraunces',Georgia,serif; font-size: 15px; font-weight: 600; color: #a85d3c; margin-bottom: 10px;">Sal&iacute;s sin nada</span>
-<p style="margin: 0; font-size: 15px; color: #5c6052;">Te levant&aacute;s tarde, agarr&aacute;s las llaves y sal&iacute;s. Ya sab&eacute;s c&oacute;mo termina el mediod&iacute;a.</p>
-</div>
-<div style="flex: 1 1 260px; min-width: min(100%,240px); background: #FAF7F1; border: 1px solid rgba(36,38,29,.09); border-radius: 20px; padding: 26px 24px;"><span style="display: block; font-family: 'Fraunces',Georgia,serif; font-size: 15px; font-weight: 600; color: #a85d3c; margin-bottom: 10px;">Lo intentaste</span>
-<p style="margin: 0; font-size: 15px; color: #5c6052;">Llevaste ensalada en un tupper. Lleg&oacute; aguada, con el aderezo desparramado por toda la mochila.</p>
-</div>
-<div style="flex: 1 1 260px; min-width: min(100%,240px); background: #FAF7F1; border: 1px solid rgba(36,38,29,.09); border-radius: 20px; padding: 26px 24px;"><span style="display: block; font-family: 'Fraunces',Georgia,serif; font-size: 15px; font-weight: 600; color: #a85d3c; margin-bottom: 10px;">Y encima</span>
-<p style="margin: 0; font-size: 15px; color: #5c6052;">Te olvidaste los cubiertos. Comiste con un tenedor de pl&aacute;stico prestado, o directamente no comiste.</p>
-</div>
-</div>
-<p style="max-width: 44ch; margin: clamp(26px,4vw,38px) auto 0; text-align: center; font-family: 'Fraunces',Georgia,serif; font-style: italic; font-size: clamp(18px,2.8vw,23px); line-height: 1.4; color: #4f5d3e;">No es que no quieras comer bien. Es que no ten&iacute;as con qu&eacute; llevarlo.</p>
-</div>
-</div>
-<!-- ═══════════ 4 · AMPLIFICACION DEL DOLOR ═══════════ -->
-<div style="padding: clamp(48px,7vw,76px) 0;">
-<div style="max-width: 1120px; margin: 0 auto; padding: 0 22px;">
-<div style="max-width: 620px; margin: 0 auto clamp(28px,4vw,42px); text-align: center;"><span style="font-size: 11.5px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #6b7b55; display: block; margin-bottom: 14px;">Lo que se acumula</span>
-<h2 style="font-family: 'Fraunces',Georgia,serif; font-weight: 500; font-size: clamp(27px,5vw,42px); line-height: 1.09; letter-spacing: -.015em; margin: 0; color: #24261d;">Un mediod&iacute;a suelto no es nada. <em style="font-style: italic; color: #4f5d3e;">Doscientos s&iacute;.</em></h2>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 12px; max-width: 900px; margin: 0 auto;">
-<div style="flex: 1 1 200px; min-width: min(100%,190px); background: #fff; border: 1px solid rgba(36,38,29,.09); border-radius: 18px; padding: 24px 22px;"><strong style="display: block; font-family: 'Fraunces',Georgia,serif; font-size: 17px; font-weight: 600; margin-bottom: 6px; color: #24261d;">El baj&oacute;n de las tres</strong> <span style="font-size: 14px; color: #5c6052;">Com&eacute;s pesado y arranc&aacute;s la tarde arrastr&aacute;ndote.</span></div>
-<div style="flex: 1 1 200px; min-width: min(100%,190px); background: #fff; border: 1px solid rgba(36,38,29,.09); border-radius: 18px; padding: 24px 22px;"><strong style="display: block; font-family: 'Fraunces',Georgia,serif; font-size: 17px; font-weight: 600; margin-bottom: 6px; color: #24261d;">La plata</strong> <span style="font-size: 14px; color: #5c6052;">Cada almuerzo comprado afuera sale lo que sale. Todos los d&iacute;as.</span></div>
-<div style="flex: 1 1 200px; min-width: min(100%,190px); background: #fff; border: 1px solid rgba(36,38,29,.09); border-radius: 18px; padding: 24px 22px;"><strong style="display: block; font-family: 'Fraunces',Georgia,serif; font-size: 17px; font-weight: 600; margin-bottom: 6px; color: #24261d;">Una decisi&oacute;n m&aacute;s</strong> <span style="font-size: 14px; color: #5c6052;">"&iquest;Qu&eacute; como hoy?" a las 12:30, con hambre y apurada. Nunca sale bien.</span></div>
-<div style="flex: 1 1 200px; min-width: min(100%,190px); background: #fff; border: 1px solid rgba(36,38,29,.09); border-radius: 18px; padding: 24px 22px;"><strong style="display: block; font-family: 'Fraunces',Georgia,serif; font-size: 17px; font-weight: 600; margin-bottom: 6px; color: #24261d;">La sensaci&oacute;n</strong> <span style="font-size: 14px; color: #5c6052;">Esa de "otra vez lo mismo" que aparece todas las semanas.</span></div>
-</div>
+<!-- Imagen: proporcion 4:5, ubicada por dimension (no pude previsualizar el contenido). Si no es la foto del problema cotidiano, reemplaza el src. -->
+<div style="max-width: 640px; margin: 0 auto;"><img style="width: 100%; height: auto; display: block; border-radius: 24px; border: 1px solid rgba(36,38,29,.08);" src="https://d1a9qnv764bsoo.cloudfront.net/stores/004/057/463/rte/ChatGPT%20Image%2017%20sept%202026,%2007_10_41%20p.m..png" alt="El mediod&iacute;a t&iacute;pico sin Kit Lunch: apuro, tupper com&uacute;n y comida improvisada" width="600" height="750" loading="lazy" /></div>
+<p style="max-width: 44ch; margin: clamp(22px,3vw,30px) auto 0; text-align: center; font-family: 'Fraunces',Georgia,serif; font-style: italic; font-size: clamp(18px,2.8vw,23px); line-height: 1.4; color: #4f5d3e;">No es que no quieras comer bien. Es que no ten&iacute;as con qu&eacute; llevarlo.</p>
+<p style="max-width: 40ch; margin: 8px auto 0; text-align: center; font-size: 14.5px; color: #8e9184;">Un mediod&iacute;a suelto no es nada. <strong style="color: #a85d3c; font-weight: 600;">Doscientos s&iacute;.</strong></p>
 </div>
 </div>
 <!-- ═══════════ 5 · LA SOLUCION ═══════════ -->
@@ -108,28 +107,19 @@
 <h2 style="font-family: 'Fraunces',Georgia,serif; font-weight: 500; font-size: clamp(26px,4.6vw,38px); line-height: 1.09; letter-spacing: -.015em; margin: 0 0 18px; color: #24261d;">El problema nunca fue la comida. <em style="font-style: italic; color: #4f5d3e;">Fue el envase.</em></h2>
 <p style="font-size: clamp(15px,2.2vw,17px); color: #5c6052; margin: 0 0 16px;">Un tupper com&uacute;n mezcla todo. La lechuga toca el aderezo desde las 8 de la ma&ntilde;ana y para el mediod&iacute;a ya est&aacute; aguada. Por eso dejaste de llevar comida.</p>
 <p style="font-size: clamp(15px,2.2vw,17px); color: #5c6052; margin: 0 0 22px;">El <strong style="color: #24261d; font-weight: 600;">Kit Lunch de Melange</strong> resuelve las tres cosas que fallaban: mantiene cada ingrediente en su capa, lleva el aderezo sellado aparte y trae los cubiertos adentro. Lo prepar&aacute;s una vez y sale con vos.</p>
-<a style="display: inline-block; font-weight: 600; font-size: 15.5px; padding: 15px 30px; border-radius: 100px; color: #fff; background: #3E4A2F; text-decoration: none;" href="#mlg-oferta">Lo quiero por $85.900</a></div>
+<a style="display: inline-block; font-weight: 600; font-size: 15.5px; padding: 15px 30px; border-radius: 100px; color: #fff; background: #3E4A2F; text-decoration: none;" href="https://melange12.mitiendanube.com/productos/frasco-ensaladero-hermetico-mas-cubiertos-3-piezas-mas-estuche-de-silicona-zmtrn/">Lo quiero por $85.900</a></div>
 </div>
 </div>
 </div>
 <!-- ═══════════ 6 · DEMOSTRACION DEL MECANISMO ═══════════ -->
 <div id="mlg-demo" style="padding: clamp(48px,7vw,76px) 0;">
 <div style="max-width: 1120px; margin: 0 auto; padding: 0 22px;">
-<div style="max-width: 640px; margin: 0 auto clamp(30px,4vw,44px); text-align: center;"><span style="font-size: 11.5px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #6b7b55; display: block; margin-bottom: 14px;">C&oacute;mo funciona</span>
-<h2 style="font-family: 'Fraunces',Georgia,serif; font-weight: 500; font-size: clamp(27px,5vw,42px); line-height: 1.09; letter-spacing: -.015em; margin: 0 0 14px; color: #24261d;">Tres cosas que un tupper <em style="font-style: italic; color: #4f5d3e;">no puede hacer.</em></h2>
-<p style="font-size: clamp(15px,2.2vw,17px); color: #5c6052; margin: 0;">No es un envase m&aacute;s lindo. Est&aacute; construido distinto.</p>
+<div style="max-width: 640px; margin: 0 auto clamp(26px,4vw,36px); text-align: center;"><span style="font-size: 11.5px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #6b7b55; display: block; margin-bottom: 14px;">C&oacute;mo funciona</span>
+<h2 style="font-family: 'Fraunces',Georgia,serif; font-weight: 500; font-size: clamp(27px,5vw,42px); line-height: 1.09; letter-spacing: -.015em; margin: 0; color: #24261d;">Tres cosas que un tupper <em style="font-style: italic; color: #4f5d3e;">no puede hacer.</em></h2>
 </div>
-<div style="display: flex; flex-wrap: wrap; gap: 14px;">
-<div style="flex: 1 1 280px; min-width: min(100%,260px); background: #fff; border: 1px solid rgba(36,38,29,.09); border-radius: 22px; padding: 30px 26px;"><span style="display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 10px; background: #E8ECE0; color: #4f5d3e; font-family: 'Fraunces',Georgia,serif; font-weight: 600; font-size: 16px; margin-bottom: 16px;">1</span> <strong style="display: block; font-family: 'Fraunces',Georgia,serif; font-size: 19px; font-weight: 600; margin-bottom: 8px; color: #24261d;">El aderezo va sellado aparte</strong>
-<p style="margin: 0; font-size: 15px; color: #5c6052;">Tiene su propio vasito con cierre. No toca la comida hasta que vos quer&eacute;s, y no se escapa en el bolso.</p>
-</div>
-<div style="flex: 1 1 280px; min-width: min(100%,260px); background: #fff; border: 1px solid rgba(36,38,29,.09); border-radius: 22px; padding: 30px 26px;"><span style="display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 10px; background: #E8ECE0; color: #4f5d3e; font-family: 'Fraunces',Georgia,serif; font-weight: 600; font-size: 16px; margin-bottom: 16px;">2</span> <strong style="display: block; font-family: 'Fraunces',Georgia,serif; font-size: 19px; font-weight: 600; margin-bottom: 8px; color: #24261d;">Cada ingrediente en su capa</strong>
-<p style="margin: 0; font-size: 15px; color: #5c6052;">Lo h&uacute;medo abajo, el verde arriba. La lechuga llega crocante a las 13:00, no aguada.</p>
-</div>
-<div style="flex: 1 1 280px; min-width: min(100%,260px); background: #fff; border: 1px solid rgba(36,38,29,.09); border-radius: 22px; padding: 30px 26px;"><span style="display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 10px; background: #E8ECE0; color: #4f5d3e; font-family: 'Fraunces',Georgia,serif; font-weight: 600; font-size: 16px; margin-bottom: 16px;">3</span> <strong style="display: block; font-family: 'Fraunces',Georgia,serif; font-size: 19px; font-weight: 600; margin-bottom: 8px; color: #24261d;">Cierre herm&eacute;tico</strong>
-<p style="margin: 0; font-size: 15px; color: #5c6052;">Lo tir&aacute;s en la mochila acostado, parado o de costado. No pierde l&iacute;quido ni deja olor.</p>
-</div>
-</div>
+<!-- Imagen: proporcion 4:5, ubicada por dimension (no pude previsualizar el contenido). Si no es la foto del mecanismo/capas abiertas, reemplaza el src. -->
+<div style="max-width: 640px; margin: 0 auto;"><img style="width: 100%; height: auto; display: block; border-radius: 24px; border: 1px solid rgba(36,38,29,.08);" src="https://d1a9qnv764bsoo.cloudfront.net/stores/004/057/463/rte/ChatGPT%20Image%2017%20sept%202026,%2007_13_47%20p.m..png" alt="Kit Lunch Melange abierto mostrando el vasito del aderezo sellado y las capas de ingredientes separadas" width="400" height="500" loading="lazy" /></div>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; max-width: 640px; margin: 22px auto 0;"><span style="font-size: 13.5px; font-weight: 700; color: #4f5d3e; background: #F1F4EA; border: 1px solid rgba(79,93,62,.20); border-radius: 100px; padding: 9px 18px;">Aderezo sellado aparte</span> <span style="font-size: 13.5px; font-weight: 700; color: #4f5d3e; background: #F1F4EA; border: 1px solid rgba(79,93,62,.20); border-radius: 100px; padding: 9px 18px;">Ingredientes frescos por capas</span> <span style="font-size: 13.5px; font-weight: 700; color: #4f5d3e; background: #F1F4EA; border: 1px solid rgba(79,93,62,.20); border-radius: 100px; padding: 9px 18px;">Cubiertos siempre con vos</span></div>
 </div>
 </div>
 <!-- ═══════════ 7 · VIDEO ═══════════ -->
@@ -174,7 +164,7 @@
 <div style="flex: 1 1 280px; min-width: min(100%,260px); background: #fff; border: 1px solid rgba(36,38,29,.10); border-radius: 22px; padding: 28px 26px;"><span style="display: block; font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #8e9184; margin-bottom: 14px;">1 Kit</span>
 <div style="font-family: 'Fraunces',Georgia,serif; font-weight: 600; font-size: 34px; color: #24261d; margin-bottom: 4px;">$85.900</div>
 <div style="font-size: 13.5px; color: #8e9184; margin-bottom: 18px;">precio unitario</div>
-<a href="#mlg-oferta" style="display: block; text-align: center; font-weight: 600; font-size: 14.5px; padding: 13px 20px; border-radius: 100px; color: #3E4A2F; background: #F1F4EA; text-decoration: none;">Ver esta opci&oacute;n</a>
+<a href="https://melange12.mitiendanube.com/productos/frasco-ensaladero-hermetico-mas-cubiertos-3-piezas-mas-estuche-de-silicona-zmtrn/" style="display: block; text-align: center; font-weight: 600; font-size: 14.5px; padding: 13px 20px; border-radius: 100px; color: #3E4A2F; background: #F1F4EA; text-decoration: none;">Ver esta opci&oacute;n</a>
 </div>
 <!-- Card pack x2 (destacada) -->
 <div style="flex: 1.15 1 300px; min-width: min(100%,270px); position: relative; background: #3E4A2F; border-radius: 22px; padding: 32px 26px 28px;"><span style="position: absolute; top: -13px; left: 26px; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #3e4a2f; background: #fff; border-radius: 100px; padding: 6px 14px;">M&aacute;s elegido</span>
@@ -186,7 +176,7 @@
 <div>✓ 3 cuotas sin inter&eacute;s de $42.950</div>
 <div>✓ o $115.965 por transferencia <span style="font-size: 10.5px; font-weight: 700; background: #A85D3C; border-radius: 100px; padding: 2px 8px; margin-left: 2px;">10% OFF</span></div>
 </div>
-<a href="#mlg-oferta" style="display: block; text-align: center; font-weight: 600; font-size: 15px; padding: 15px 20px; border-radius: 100px; color: #3e4a2f; background: #fff; text-decoration: none;">Quiero el Pack x2</a>
+<a href="https://melange12.mitiendanube.com/productos/frasco-ensaladero-hermetico-mas-cubiertos-3-piezas-mas-estuche-de-silicona-zmtrn/" style="display: block; text-align: center; font-weight: 600; font-size: 15px; padding: 15px 20px; border-radius: 100px; color: #3e4a2f; background: #fff; text-decoration: none;">Quiero el Pack x2</a>
 </div>
 </div>
 </div>
@@ -194,14 +184,12 @@
 <!-- ═══════════ 9 · COMO SE USA ═══════════ -->
 <div style="background: #fff; border-top: 1px solid rgba(36,38,29,.09); padding: clamp(48px,7vw,76px) 0;">
 <div style="max-width: 1120px; margin: 0 auto; padding: 0 22px;">
-<div style="max-width: 620px; margin: 0 auto clamp(28px,4vw,42px); text-align: center;"><span style="font-size: 11.5px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #6b7b55; display: block; margin-bottom: 14px;">As&iacute; de simple</span>
+<div style="max-width: 620px; margin: 0 auto clamp(26px,4vw,36px); text-align: center;"><span style="font-size: 11.5px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #6b7b55; display: block; margin-bottom: 14px;">As&iacute; de simple</span>
 <h2 style="font-family: 'Fraunces',Georgia,serif; font-weight: 500; font-size: clamp(27px,5vw,42px); line-height: 1.09; letter-spacing: -.015em; margin: 0; color: #24261d;">Tres pasos. <em style="font-style: italic; color: #4f5d3e;">Un minuto.</em></h2>
 </div>
-<div style="display: flex; flex-wrap: wrap; gap: 14px; max-width: 940px; margin: 0 auto;">
-<div style="flex: 1 1 260px; min-width: min(100%,240px); background: #FAF7F1; border: 1px solid rgba(36,38,29,.09); border-radius: 20px; padding: 28px 24px;"><span style="display: block; font-family: 'Fraunces',Georgia,serif; font-size: 34px; font-weight: 600; color: #c5cdb6; line-height: 1; margin-bottom: 10px;">01</span> <strong style="display: block; font-family: 'Fraunces',Georgia,serif; font-size: 18px; font-weight: 600; margin-bottom: 6px; color: #24261d;">Carg&aacute;s por capas</strong> <span style="font-size: 14.5px; color: #5c6052;">Lo h&uacute;medo abajo, el verde arriba. La noche anterior, mientras cen&aacute;s.</span></div>
-<div style="flex: 1 1 260px; min-width: min(100%,240px); background: #FAF7F1; border: 1px solid rgba(36,38,29,.09); border-radius: 20px; padding: 28px 24px;"><span style="display: block; font-family: 'Fraunces',Georgia,serif; font-size: 34px; font-weight: 600; color: #c5cdb6; line-height: 1; margin-bottom: 10px;">02</span> <strong style="display: block; font-family: 'Fraunces',Georgia,serif; font-size: 18px; font-weight: 600; margin-bottom: 6px; color: #24261d;">Cerr&aacute;s y a la heladera</strong> <span style="font-size: 14.5px; color: #5c6052;">El aderezo en su vasito, los cubiertos en su estuche. Cierra herm&eacute;tico.</span></div>
-<div style="flex: 1 1 260px; min-width: min(100%,240px); background: #FAF7F1; border: 1px solid rgba(36,38,29,.09); border-radius: 20px; padding: 28px 24px;"><span style="display: block; font-family: 'Fraunces',Georgia,serif; font-size: 34px; font-weight: 600; color: #c5cdb6; line-height: 1; margin-bottom: 10px;">03</span> <strong style="display: block; font-family: 'Fraunces',Georgia,serif; font-size: 18px; font-weight: 600; margin-bottom: 6px; color: #24261d;">Al mediod&iacute;a, aderez&aacute;s y listo</strong> <span style="font-size: 14.5px; color: #5c6052;">Volc&aacute;s, mezcl&aacute;s y com&eacute;s directo del recipiente. Sin pasar a otro plato.</span></div>
-</div>
+<!-- Imagen: secuencia vertical (proporcion ~1:3.5), ubicada por dimension (no pude previsualizar el contenido). Si no muestra los 3 pasos de preparacion, reemplaza el src. -->
+<div style="max-width: 380px; margin: 0 auto;"><img style="width: 100%; height: auto; display: block; border-radius: 22px; border: 1px solid rgba(36,38,29,.08);" src="https://d1a9qnv764bsoo.cloudfront.net/stores/004/057/463/rte/5f22b4a5-d1d4-43a1-b509-c94a17c8ce50.png" alt="Secuencia de preparaci&oacute;n del Kit Lunch Melange en tres pasos: preparar, cerrar y disfrutar" width="400" height="1402" loading="lazy" /></div>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 22px; max-width: 640px; margin: 22px auto 0;"><span style="display: inline-flex; align-items: center; gap: 8px; font-family: 'Fraunces',Georgia,serif; font-weight: 600; font-size: 15.5px; color: #24261d;"><span style="color: #c5cdb6; font-size: 20px;">01</span> Prepar&aacute;</span> <span style="display: inline-flex; align-items: center; gap: 8px; font-family: 'Fraunces',Georgia,serif; font-weight: 600; font-size: 15.5px; color: #24261d;"><span style="color: #c5cdb6; font-size: 20px;">02</span> Cerr&aacute;</span> <span style="display: inline-flex; align-items: center; gap: 8px; font-family: 'Fraunces',Georgia,serif; font-weight: 600; font-size: 15.5px; color: #24261d;"><span style="color: #c5cdb6; font-size: 20px;">03</span> Disfrut&aacute;</span></div>
 </div>
 </div>
 <!-- ═══════════ 10 · CUBIERTOS ═══════════ -->
@@ -222,26 +210,14 @@
 <!-- ═══════════ 11 · COMPARACION ═══════════ -->
 <div style="background: #fff; border-top: 1px solid rgba(36,38,29,.09); padding: clamp(48px,7vw,76px) 0;">
 <div style="max-width: 1120px; margin: 0 auto; padding: 0 22px;">
-<div style="max-width: 620px; margin: 0 auto clamp(28px,4vw,42px); text-align: center;"><span style="font-size: 11.5px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #6b7b55; display: block; margin-bottom: 14px;">El cambio</span>
+<div style="max-width: 620px; margin: 0 auto clamp(26px,4vw,36px); text-align: center;"><span style="font-size: 11.5px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #6b7b55; display: block; margin-bottom: 14px;">El cambio</span>
 <h2 style="font-family: 'Fraunces',Georgia,serif; font-weight: 500; font-size: clamp(27px,5vw,42px); line-height: 1.09; letter-spacing: -.015em; margin: 0; color: #24261d;">Tu mediod&iacute;a, antes y despu&eacute;s.</h2>
 </div>
-<div style="display: flex; flex-wrap: wrap; gap: 16px; max-width: 900px; margin: 0 auto;">
-<div style="flex: 1 1 290px; min-width: min(100%,270px); border-radius: 22px; padding: 30px 26px; border: 1px solid rgba(36,38,29,.09); background: #FAF7F1;">
-<h3 style="font-size: 11.5px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; margin: 0 0 18px; color: #8e9184;">Con un tupper com&uacute;n</h3>
-<div style="display: flex; gap: 12px; align-items: flex-start; padding: 11px 0; font-size: 15px; color: #5c6052; border-bottom: 1px solid rgba(36,38,29,.08);"><span style="flex: none; width: 20px; height: 20px; border-radius: 50%; background: #F2EDE6; color: #a85d3c; display: inline-flex; align-items: center; justify-content: center; font-size: 11px; line-height: 1;">✕</span>El aderezo toca todo desde las 8 AM</div>
-<div style="display: flex; gap: 12px; align-items: flex-start; padding: 11px 0; font-size: 15px; color: #5c6052; border-bottom: 1px solid rgba(36,38,29,.08);"><span style="flex: none; width: 20px; height: 20px; border-radius: 50%; background: #F2EDE6; color: #a85d3c; display: inline-flex; align-items: center; justify-content: center; font-size: 11px; line-height: 1;">✕</span>Llega aguada y sin gracia</div>
-<div style="display: flex; gap: 12px; align-items: flex-start; padding: 11px 0; font-size: 15px; color: #5c6052; border-bottom: 1px solid rgba(36,38,29,.08);"><span style="flex: none; width: 20px; height: 20px; border-radius: 50%; background: #F2EDE6; color: #a85d3c; display: inline-flex; align-items: center; justify-content: center; font-size: 11px; line-height: 1;">✕</span>Siempre falta un cubierto</div>
-<div style="display: flex; gap: 12px; align-items: flex-start; padding: 11px 0; font-size: 15px; color: #5c6052; border-bottom: 1px solid rgba(36,38,29,.08);"><span style="flex: none; width: 20px; height: 20px; border-radius: 50%; background: #F2EDE6; color: #a85d3c; display: inline-flex; align-items: center; justify-content: center; font-size: 11px; line-height: 1;">✕</span>Miedo a que se abra en la mochila</div>
-<div style="display: flex; gap: 12px; align-items: flex-start; padding: 11px 0; font-size: 15px; color: #5c6052;"><span style="flex: none; width: 20px; height: 20px; border-radius: 50%; background: #F2EDE6; color: #a85d3c; display: inline-flex; align-items: center; justify-content: center; font-size: 11px; line-height: 1;">✕</span>Termin&aacute;s comprando afuera igual</div>
-</div>
-<div style="flex: 1 1 290px; min-width: min(100%,270px); border-radius: 22px; padding: 30px 26px; border: 1px solid rgba(79,93,62,.28); background: #F1F4EA;">
-<h3 style="font-size: 11.5px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; margin: 0 0 18px; color: #4f5d3e;">Con el Kit Lunch</h3>
-<div style="display: flex; gap: 12px; align-items: flex-start; padding: 11px 0; font-size: 15px; color: #24261d; font-weight: 500; border-bottom: 1px solid rgba(36,38,29,.08);"><span style="flex: none; width: 20px; height: 20px; border-radius: 50%; background: #3E4A2F; color: #fff; display: inline-flex; align-items: center; justify-content: center; font-size: 11px; line-height: 1;">✓</span>El aderezo sellado hasta que vos quer&eacute;s</div>
-<div style="display: flex; gap: 12px; align-items: flex-start; padding: 11px 0; font-size: 15px; color: #24261d; font-weight: 500; border-bottom: 1px solid rgba(36,38,29,.08);"><span style="flex: none; width: 20px; height: 20px; border-radius: 50%; background: #3E4A2F; color: #fff; display: inline-flex; align-items: center; justify-content: center; font-size: 11px; line-height: 1;">✓</span>Cada capa intacta al mediod&iacute;a</div>
-<div style="display: flex; gap: 12px; align-items: flex-start; padding: 11px 0; font-size: 15px; color: #24261d; font-weight: 500; border-bottom: 1px solid rgba(36,38,29,.08);"><span style="flex: none; width: 20px; height: 20px; border-radius: 50%; background: #3E4A2F; color: #fff; display: inline-flex; align-items: center; justify-content: center; font-size: 11px; line-height: 1;">✓</span>Cubiertos siempre adentro del kit</div>
-<div style="display: flex; gap: 12px; align-items: flex-start; padding: 11px 0; font-size: 15px; color: #24261d; font-weight: 500; border-bottom: 1px solid rgba(36,38,29,.08);"><span style="flex: none; width: 20px; height: 20px; border-radius: 50%; background: #3E4A2F; color: #fff; display: inline-flex; align-items: center; justify-content: center; font-size: 11px; line-height: 1;">✓</span>Cierre herm&eacute;tico, lo tir&aacute;s donde sea</div>
-<div style="display: flex; gap: 12px; align-items: flex-start; padding: 11px 0; font-size: 15px; color: #24261d; font-weight: 500;"><span style="flex: none; width: 20px; height: 20px; border-radius: 50%; background: #3E4A2F; color: #fff; display: inline-flex; align-items: center; justify-content: center; font-size: 11px; line-height: 1;">✓</span>Com&eacute;s lo que decidiste comer</div>
-</div>
+<!-- Imagen comparativa (proporcion ~1:2.3), ubicada por dimension (no pude previsualizar el contenido). Si no muestra el antes/despues, reemplaza el src. -->
+<div style="max-width: 420px; margin: 0 auto;"><img style="width: 100%; height: auto; display: block; border-radius: 22px; border: 1px solid rgba(36,38,29,.08);" src="https://d1a9qnv764bsoo.cloudfront.net/stores/004/057/463/rte/9728a1ab-dcf9-4f3a-87a0-adcf48366d33.png" alt="Comparaci&oacute;n entre un tupper com&uacute;n desordenado y el Kit Lunch Melange con todo en su lugar" width="300" height="701" loading="lazy" /></div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px; max-width: 560px; margin: 22px auto 0;">
+<div style="flex: 1 1 220px; min-width: min(100%,200px); text-align: center;"><h3 style="font-size: 11.5px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; margin: 0 0 6px; color: #8e9184;">Tupper com&uacute;n</h3><span style="font-size: 14px; color: #5c6052;">Todo mezclado, aderezo desparramado.</span></div>
+<div style="flex: 1 1 220px; min-width: min(100%,200px); text-align: center;"><h3 style="font-size: 11.5px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; margin: 0 0 6px; color: #4f5d3e;">Kit Lunch Melange</h3><span style="font-size: 14px; color: #24261d; font-weight: 500;">Cada cosa en su lugar, hasta el mediod&iacute;a.</span></div>
 </div>
 </div>
 </div>
@@ -259,7 +235,7 @@
 <p style="color: rgba(255,255,255,.80); font-size: clamp(15px,2.2vw,17px); max-width: 46ch; margin: 0 auto 12px;">No te vamos a inventar un n&uacute;mero: pon&eacute; el tuyo. Sum&aacute; lo que gastaste en almuerzos esta semana y multiplicalo por cuatro.</p>
 <p style="color: #fff; font-family: 'Fraunces',Georgia,serif; font-style: italic; font-size: clamp(18px,3vw,25px); max-width: 26ch; margin: 0 auto 10px; line-height: 1.35;">El kit se paga una vez. Los almuerzos comprados se pagan todos los d&iacute;as.</p>
 <p style="color: #c9d6b4; font-size: 14.5px; max-width: 40ch; margin: 0 auto 26px;">Y si son 2 en casa, con el <strong style="color: #fff;">Pack x2</strong> el segundo Kit sale la mitad: se paga solo m&aacute;s r&aacute;pido todav&iacute;a.</p>
-<a style="display: inline-block; font-weight: 600; font-size: 15.5px; padding: 16px 34px; border-radius: 100px; color: #3e4a2f; background: #fff; text-decoration: none;" href="#mlg-oferta">Ver la oferta</a></div>
+<a style="display: inline-block; font-weight: 600; font-size: 15.5px; padding: 16px 34px; border-radius: 100px; color: #3e4a2f; background: #fff; text-decoration: none;" href="https://melange12.mitiendanube.com/productos/frasco-ensaladero-hermetico-mas-cubiertos-3-piezas-mas-estuche-de-silicona-zmtrn/">Ver la oferta</a></div>
 </div>
 </div>
 <!-- ═══════════ 14 · RESEÑAS ═══════════
@@ -364,7 +340,11 @@
 <div style="max-width: 1120px; margin: 0 auto; padding: 0 22px;">
 <div style="background: #fff; border: 1px solid rgba(62,74,47,.28); border-radius: 30px; padding: clamp(40px,6vw,58px) 24px;"><span style="display: block; font-size: 11.5px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #6b7b55; text-align: center; margin-bottom: 16px;">Kit Lunch &middot; Melange</span>
 <h2 style="font-family: 'Fraunces',Georgia,serif; font-weight: 500; font-size: clamp(27px,5vw,42px); line-height: 1.09; letter-spacing: -.015em; max-width: 24ch; margin: 0 auto 14px; text-align: center; color: #24261d;">Eleg&iacute; tu opci&oacute;n y que ma&ntilde;ana al mediod&iacute;a <em style="font-style: italic; color: #4f5d3e;">ya est&eacute; resuelto.</em></h2>
-<p style="color: #5c6052; font-size: clamp(15px,2.2vw,17px); max-width: 44ch; margin: 0 auto clamp(30px,4vw,40px); text-align: center;">Recipiente con capas, vasito para el aderezo, set de 3 cubiertos y estuche. Todo en un solo kit &mdash; y el doble si eleg&iacute;s el Pack x2.</p>
+<p style="color: #5c6052; font-size: clamp(15px,2.2vw,17px); max-width: 44ch; margin: 0 auto clamp(26px,3.5vw,32px); text-align: center;">Recipiente con capas, vasito para el aderezo, set de 3 cubiertos y estuche. Todo en un solo kit &mdash; y el doble si eleg&iacute;s el Pack x2.</p>
+<!-- Foto del Pack x2: cuando me la pases, descomentá este bloque y pegá la URL en el src.
+     Va justo antes de las tarjetas para que se entienda de un vistazo que se reciben 2 kits completos.
+<div style="max-width: 480px; margin: 0 auto clamp(26px,3.5vw,32px);"><img style="width: 100%; height: auto; display: block; border-radius: 22px; border: 1px solid rgba(36,38,29,.08);" src="URL_DE_TU_FOTO_PACK_X2" alt="Pack x2 del Kit Lunch Melange: dos kits completos listos para llevar" loading="lazy" /></div>
+-->
 <!-- Dos opciones -->
 <div style="display: flex; flex-wrap: wrap; gap: 16px; max-width: 900px; margin: 0 auto clamp(30px,4vw,40px);">
 <!-- Opcion A: 1 Kit -->
@@ -374,7 +354,7 @@
 <div>3 cuotas sin inter&eacute;s de $28.633</div>
 <div>o <strong style="color: #24261d;">$77.310</strong> por transferencia <span style="display: inline-block; font-size: 10.5px; font-weight: 700; color: #fff; background: #A85D3C; border-radius: 100px; padding: 2px 8px; vertical-align: 1px;">10% OFF</span></div>
 </div>
-<a style="display: block; text-align: center; font-weight: 600; font-size: 15px; padding: 15px 20px; border-radius: 100px; color: #fff; background: #3E4A2F; text-decoration: none;" href="#mlg-link-unidad" data-cta="unidad">Comprar 1 Kit</a>
+<a style="display: block; text-align: center; font-weight: 600; font-size: 15px; padding: 15px 20px; border-radius: 100px; color: #fff; background: #3E4A2F; text-decoration: none;" href="https://melange12.mitiendanube.com/productos/frasco-ensaladero-hermetico-mas-cubiertos-3-piezas-mas-estuche-de-silicona-zmtrn/">Comprar 1 Kit</a>
 </div>
 <!-- Opcion B: Pack x2 (destacada) -->
 <div style="flex: 1.1 1 300px; min-width: min(100%,270px); position: relative; border: 2px solid #3E4A2F; border-radius: 22px; padding: 32px 26px 28px; background: #F1F4EA;"><span style="position: absolute; top: -13px; left: 26px; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #fff; background: #3E4A2F; border-radius: 100px; padding: 6px 14px;">M&aacute;s elegido &middot; 2&deg; Kit 50% OFF</span>
@@ -385,7 +365,7 @@
 <div>3 cuotas sin inter&eacute;s de $42.950</div>
 <div>o <strong style="color: #24261d;">$115.965</strong> por transferencia <span style="display: inline-block; font-size: 10.5px; font-weight: 700; color: #fff; background: #A85D3C; border-radius: 100px; padding: 2px 8px; vertical-align: 1px;">10% OFF</span></div>
 </div>
-<a style="display: block; text-align: center; font-weight: 600; font-size: 15.5px; padding: 16px 20px; border-radius: 100px; color: #fff; background: #3E4A2F; text-decoration: none;" href="#mlg-link-pack2" data-cta="pack2">Comprar el Pack x2</a>
+<a style="display: block; text-align: center; font-weight: 600; font-size: 15.5px; padding: 16px 20px; border-radius: 100px; color: #fff; background: #3E4A2F; text-decoration: none;" href="https://melange12.mitiendanube.com/productos/frasco-ensaladero-hermetico-mas-cubiertos-3-piezas-mas-estuche-de-silicona-zmtrn/"><!-- ⚠️ mismo link que "1 Kit" hasta que cargues el Pack x2 como producto/variante propia, ver nota al inicio del archivo -->Comprar el Pack x2</a>
 </div>
 </div>
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 9px; margin-bottom: 28px;"><span style="font-size: 13.5px; color: #4f5d3e; background: #F1F4EA; border: 1px solid rgba(79,93,62,.20); border-radius: 100px; padding: 9px 17px;">Env&iacute;o gratis a domicilio</span> <span style="font-size: 13.5px; color: #4f5d3e; background: #F1F4EA; border: 1px solid rgba(79,93,62,.20); border-radius: 100px; padding: 9px 17px;">Garant&iacute;a 90 d&iacute;as</span> <span style="font-size: 13.5px; color: #4f5d3e; background: #F1F4EA; border: 1px solid rgba(79,93,62,.20); border-radius: 100px; padding: 9px 17px;">Pago protegido</span></div>
@@ -466,7 +446,7 @@
 <div style="font-size: 13.5px; color: rgba(255,255,255,.68); margin-top: 4px;">o $77.310 por transferencia &middot; Env&iacute;o gratis</div>
 <div style="margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,.16); font-size: 13.5px; color: #E3A88F; font-weight: 700;">o llev&aacute; el Pack x2 y ahorr&aacute;s $42.950</div>
 </div>
-<a style="display: block; width: 100%; max-width: 420px; margin: 0 auto; font-weight: 600; font-size: clamp(16px,2.6vw,19px); padding: 21px 34px; border-radius: 100px; color: #3e4a2f; background: #fff; text-decoration: none; box-sizing: border-box;" href="#mlg-oferta"> Ver las dos opciones &rarr; </a>
+<a style="display: block; width: 100%; max-width: 420px; margin: 0 auto; font-weight: 600; font-size: clamp(16px,2.6vw,19px); padding: 21px 34px; border-radius: 100px; color: #3e4a2f; background: #fff; text-decoration: none; box-sizing: border-box;" href="https://melange12.mitiendanube.com/productos/frasco-ensaladero-hermetico-mas-cubiertos-3-piezas-mas-estuche-de-silicona-zmtrn/"> Quiero mi Kit Lunch &rarr; </a>
 <p style="font-size: 12.5px; color: rgba(255,255,255,.60); margin: 16px 0 0;">Env&iacute;o gratis a todo el pa&iacute;s &middot; Garant&iacute;a de 90 d&iacute;as &middot; Pago 100% protegido</p>
 <div style="margin-top: 34px; padding-top: 26px; border-top: 1px solid rgba(255,255,255,.14);">
 <div style="font-family: 'Fraunces',Georgia,serif; font-weight: 600; font-size: 17px; letter-spacing: .14em; color: #fff; text-transform: uppercase;">Melange</div>
