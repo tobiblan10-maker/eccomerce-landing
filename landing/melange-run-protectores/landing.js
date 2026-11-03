@@ -340,7 +340,7 @@ if (!document.getElementById('mr-css')) {
    Sin reseñas cargadas la sección NO se muestra a los clientes.
    Para ver el diseño vacío: agregar ?resenas=preview a la URL.
    ===================================================================== */
-var RW_DEMO = /[?&#]resenas=demo/.test(location.search + location.hash) && !!(window.MR_REVIEWS_DEMO && window.MR_REVIEWS_DEMO.length);
+var RW_DEMO = (window.MR_FORCE_DEMO === true || /[?&#]resenas=demo/.test(location.search + location.hash)) && !!(window.MR_REVIEWS_DEMO && window.MR_REVIEWS_DEMO.length);
 function rwList() {
   var src = RW_DEMO ? window.MR_REVIEWS_DEMO : window.MR_REVIEWS;
   if (!src || !src.length) return [];

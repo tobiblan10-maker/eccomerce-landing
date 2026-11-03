@@ -10,3 +10,11 @@ var out = '<div class="mr-root mr-demo">&nbsp;</div>\n<p>\n<script>' + rev.repla
   + '<script>(function(){try{new Function(decodeURIComponent(escape(atob("' + b64 + '"))))()}catch(e){console.log("mr",e)}})();</script>\n</p>\n';
 fs.writeFileSync(path.join(dir, 'tiendanube-snippet.html'), out);
 console.log('tiendanube-snippet.html', out.length, 'bytes');
+
+// Versión DEMO: solo para un producto OCULTO / en borrador. Nunca en un producto publicado.
+var demo = fs.readFileSync(path.join(dir, 'resenas-demo.js'), 'utf8').replace(/\/\*[\s\S]*?\*\//g, '').trim();
+var outDemo = '<!-- DEMO: reseñas ficticias. Usar SOLO en un producto oculto o en borrador. No publicar. -->\n'
+  + '<div class="mr-root mr-demo">&nbsp;</div>\n<p>\n<script>window.MR_FORCE_DEMO = true; ' + demo.replace(/\n\s*/g, ' ') + '</script>\n'
+  + '<script>(function(){try{new Function(decodeURIComponent(escape(atob("' + b64 + '"))))()}catch(e){console.log("mr",e)}})();</script>\n</p>\n';
+fs.writeFileSync(path.join(dir, 'tiendanube-snippet-DEMO-oculto.html'), outDemo);
+console.log('tiendanube-snippet-DEMO-oculto.html', outDemo.length, 'bytes');

@@ -6,6 +6,7 @@
 | `resenas.js` | **Reseñas reales.** Se cargan acá, en texto plano. |
 | `build.js` | `node build.js` genera `tiendanube-snippet.html`. |
 | `tiendanube-snippet.html` | Bloque para pegar en la descripción del producto (reemplaza el anterior). |
+| `tiendanube-snippet-DEMO-oculto.html` | Igual que el anterior pero con reseñas ficticias marcadas DEMO. **Solo para un producto oculto o en borrador.** |
 | `preview.html` | Vista previa local. Si le agregás `?resenas=preview` ves el diseño vacío, y con `?resenas=demo` ves reseñas ficticias de ejemplo (`resenas-demo.js`, nunca se publica). |
 
 ## Sección de reseñas
