@@ -340,8 +340,9 @@ if (!document.getElementById('mr-css')) {
    Sin reseñas cargadas la sección NO se muestra a los clientes.
    Para ver el diseño vacío: agregar ?resenas=preview a la URL.
    ===================================================================== */
+var RW_DEMO = /[?&#]resenas=demo/.test(location.search + location.hash) && !!(window.MR_REVIEWS_DEMO && window.MR_REVIEWS_DEMO.length);
 function rwList() {
-  var src = window.MR_REVIEWS;
+  var src = RW_DEMO ? window.MR_REVIEWS_DEMO : window.MR_REVIEWS;
   if (!src || !src.length) return [];
   var out = [];
   for (var i = 0; i < src.length; i++) {
@@ -376,6 +377,7 @@ function rwCard(r, idx) {
     }).join('') + '</div>';
   }
   return '<article class="' + cls + '" data-s="' + r.s + '" data-f="' + (r.f.length ? 1 : 0) + '">'
+    + (RW_DEMO ? '<span class="mr-rw-demo">DEMO</span>' : '')
     + ph
     + '<div class="mr-rw-body">'
     + '<div class="mr-rw-top">' + rwStars(r.s) + (r.d ? '<time class="mr-rw-date" datetime="' + rwEsc(r.d) + '">' + rwDate(r.d) + '</time>' : '') + '</div>'
@@ -408,6 +410,7 @@ function reviewsHTML() {
   var rec = n ? Math.round((dist[4] + dist[5]) / n * 100) : 0;
   var withPh = list.filter(function (r) { return r.f.length; }).length;
   var h = '<section class="mr-sec mr-white mr-rw" id="mr-resenas" aria-labelledby="mr-rw-h">';
+  if (RW_DEMO) h += '<div class="mr-rw-note">DEMO · Reseñas ficticias solo para ver el diseño · No publicar · En la tienda se muestran únicamente las reseñas reales de resenas.js</div>';
   if (!n) h += '<div class="mr-rw-note">Vista previa interna del diseño · Sin reseñas publicadas · Esta sección no se muestra a los clientes hasta cargar reseñas reales</div>';
   h += '<header class="mr-rw-head"><span class="mr-eye" style="color:#3D4859">Reseñas de clientes</span><h2 class="mr-d mr-h2" id="mr-rw-h">Experiencias reales,<br><span class="mr-rw-hl">kilómetro a kilómetro</span></h2><p>Opiniones de quienes ya entrenan, corren y caminan con Mélange.</p></header>';
   h += '<div class="mr-rw-sum">'
@@ -513,6 +516,8 @@ var RWCSS = [
 '.mr-rw-grid{column-count:1;column-gap:14px}',
 '.mr-rw-card{break-inside:avoid;-webkit-column-break-inside:avoid;display:inline-block;width:100%;margin:0 0 14px;background:#FBFBF8;border:1px solid #E6E7E0;border-radius:18px;overflow:hidden;box-shadow:0 1px 2px rgba(15,26,43,.04),0 10px 28px -18px rgba(15,26,43,.28);transition:transform .25s ease,box-shadow .25s ease;vertical-align:top}',
 '.mr-rw-card[hidden]{display:none}',
+'.mr-rw-card{position:relative}.mr-rw-demo{position:absolute;top:10px;left:10px;z-index:2;background:#FFF8E1;border:1.5px dashed #C99A2E;color:#6B4E00;font-size:10px;font-weight:800;letter-spacing:1px;border-radius:6px;padding:2px 7px}',
+'.mr-rw-card:not(.mr-rw-has-ph) .mr-rw-demo{top:auto;bottom:14px;left:auto;right:14px}',
 '@media (hover:hover){.mr-rw-card:hover{transform:translateY(-3px);box-shadow:0 2px 4px rgba(15,26,43,.05),0 20px 36px -20px rgba(15,26,43,.38)}}',
 '.mr-rw-body{padding:18px 18px 16px}',
 '.mr-rw-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 10px}',

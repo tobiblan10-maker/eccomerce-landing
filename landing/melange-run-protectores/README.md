@@ -6,7 +6,7 @@
 | `resenas.js` | **Reseñas reales.** Se cargan acá, en texto plano. |
 | `build.js` | `node build.js` genera `tiendanube-snippet.html`. |
 | `tiendanube-snippet.html` | Bloque para pegar en la descripción del producto (reemplaza el anterior). |
-| `preview.html` | Vista previa local. Si le agregás `?resenas=preview`, ves el diseño vacío de reseñas. |
+| `preview.html` | Vista previa local. Si le agregás `?resenas=preview` ves el diseño vacío, y con `?resenas=demo` ves reseñas ficticias de ejemplo (`resenas-demo.js`, nunca se publica). |
 
 ## Sección de reseñas
 - Se ubica después de "Cómo se usa" y antes de "Elegí tu pack": la prueba social aparece justo antes de que el cliente vea los precios, y después siguen la garantía y las preguntas frecuentes.
