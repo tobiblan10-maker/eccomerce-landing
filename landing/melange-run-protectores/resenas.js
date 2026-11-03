@@ -1,0 +1,2 @@
+window.MR_REVIEWS = [
+];

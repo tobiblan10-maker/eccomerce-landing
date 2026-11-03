@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MÉLANGE Run — Preview landing</title>
+<!-- Preview local: simula la ficha de producto de Tiendanube (selector de variantes + botón de compra)
+     para probar la landing. Agregá ?resenas=preview a la URL para ver el diseño de reseñas vacío. -->
+<style>
+body{margin:0;background:#fff;font-family:Inter,system-ui,sans-serif}
+.pv-wrap{max-width:1100px;margin:0 auto;padding:16px}
+.pv-prod{display:flex;flex-wrap:wrap;gap:16px;align-items:center;border:1px dashed #ccc;border-radius:12px;padding:16px;margin:0 0 16px}
+.pv-prod select,.pv-prod button{font-size:15px;padding:10px 14px;border-radius:8px}
+.js-addtocart{background:#0F1A2B;color:#fff;border:0;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="pv-wrap">
+  <div class="pv-prod">
+    <b>[Simulación ficha Tiendanube]</b>
+    <select class="js-variation-option" name="variation[0]">
+      <option value="Pack x10 (10 fundas)">Pack x10 (10 fundas)</option>
+      <option value="Pack x20 + Parches y Manual de regalo">Pack x20 + Parches y Manual de regalo</option>
+      <option value="Pack x30 + Parches y Manual de regalo">Pack x30 + Parches y Manual de regalo</option>
+    </select>
+    <button type="button" class="js-addtocart">Agregar al carrito</button>
+  </div>
+  <div class="mr-root mr-demo">&nbsp;</div>
+</div>
+<script src="resenas.js"></script>
+<script src="landing.js"></script>
+</body>
+</html>
