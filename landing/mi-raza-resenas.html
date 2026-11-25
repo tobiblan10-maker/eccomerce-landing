@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Mi Raza · Reseñas (vista previa)</title>
+<!-- Archivo de preview. Para la landing, copiá solo desde <section class="mr-reviews"> hasta </section> (más el <link> de fuentes). -->
+<style>body{margin:0;background:#F6F1E4}</style>
+</head>
+<body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700&display=swap">
+
+<!-- =====================================================================
+     MI RAZA · SECCIÓN DE RESEÑAS (VISTA PREVIA)
+     Todo el CSS y JS está scoped bajo .mr-reviews para no pisar el tema.
+     Para cambiar las reseñas, editá solo el arreglo MR_RESENAS del script.
+     ===================================================================== -->
+<section class="mr-reviews" aria-labelledby="mr-reviews-title">
+<style>
+/* Layout: encabezado + carrusel con scroll-snap en celular, grilla de 3 columnas en escritorio */
+.mr-reviews{
+  --mr-cream:#F6F1E4; --mr-card:#FFFDF8; --mr-ink:#123F42; --mr-ink-soft:#4A6B6C;
+  --mr-line:#E3DCC8; --mr-lime:#C8E05A; --mr-lime-soft:#EEF5CF; --mr-star:#123F42;
+  --mr-display:"Fraunces",Georgia,"Times New Roman",serif;
+  --mr-body:"Nunito Sans","Segoe UI",Arial,sans-serif;
+  background:var(--mr-cream); color:var(--mr-ink); font-family:var(--mr-body);
+  padding-block:48px 56px; box-sizing:border-box; overflow:hidden;
+}
+.mr-reviews *,.mr-reviews *::before,.mr-reviews *::after{box-sizing:border-box}
+.mr-reviews .mr-inner{max-width:1080px;margin:0 auto;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.mr-reviews .mr-preview{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--mr-ink);background:var(--mr-lime-soft);
+  border:1px dashed var(--mr-ink-soft);border-radius:999px;padding:6px 12px;margin:0 0 18px}
+.mr-reviews .mr-preview::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--mr-lime);box-shadow:0 0 0 2px var(--mr-ink)}
+.mr-reviews .mr-eyebrow{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mr-ink-soft);margin:0 0 6px}
+.mr-reviews h2{font-family:var(--mr-display);font-weight:700;font-size:clamp(28px,22px + 2vw,40px);line-height:1.12;
+  margin:0 0 10px;text-wrap:balance;max-width:22ch}
+.mr-reviews h2 em{font-style:normal;background:linear-gradient(transparent 62%,var(--mr-lime) 62%,var(--mr-lime) 92%,transparent 92%)}
+.mr-reviews .mr-lede{margin:0 0 28px;color:var(--mr-ink-soft);font-size:16px;line-height:1.6;max-width:56ch}
+
+/* Celular: carrusel horizontal, una tarjeta completa + un pedacito de la siguiente */
+.mr-reviews .mr-track{list-style:none;margin:0 calc(-1 * max(16px,env(safe-area-inset-right,0px))) 0 calc(-1 * max(16px,env(safe-area-inset-left,0px)));padding:4px max(16px,env(safe-area-inset-right,0px)) 12px max(16px,env(safe-area-inset-left,0px));scroll-padding-left:max(16px,env(safe-area-inset-left,0px));display:grid;grid-auto-flow:column;
+  grid-auto-columns:84%;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;scrollbar-width:none}
+.mr-reviews .mr-track::-webkit-scrollbar{display:none}
+.mr-reviews .mr-card{scroll-snap-align:start;background:var(--mr-card);border:1px solid var(--mr-line);border-radius:16px;
+  padding:22px 20px 20px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.mr-reviews .mr-stars{display:flex;gap:2px;color:var(--mr-star);font-size:15px;letter-spacing:1px}
+.mr-reviews .mr-stars .off{color:var(--mr-line)}
+.mr-reviews .mr-card h3{font-family:var(--mr-display);font-weight:600;font-size:19px;line-height:1.25;margin:0;text-wrap:balance}
+.mr-reviews .mr-card p{margin:0;font-size:15px;line-height:1.62;color:var(--mr-ink)}
+.mr-reviews .mr-who{margin-top:auto;padding-top:14px;border-top:1px solid var(--mr-line);display:flex;align-items:center;gap:12px}
+.mr-reviews .mr-av{width:40px;height:40px;flex:none;border-radius:50%;display:grid;place-items:center;
+  background:var(--mr-ink);color:var(--mr-lime);font-weight:700;font-size:14px;letter-spacing:.04em}
+.mr-reviews .mr-name{font-weight:700;font-size:15px;line-height:1.2}
+.mr-reviews .mr-city{font-size:13px;color:var(--mr-ink-soft)}
+.mr-reviews .mr-hint{display:flex;align-items:center;gap:8px;margin:6px 0 0;font-size:13px;color:var(--mr-ink-soft)}
+.mr-reviews .mr-hint::after{content:"→";font-weight:700}
+
+/* Tablet: dos tarjetas y un poco de la tercera */
+@media (min-width:640px){ .mr-reviews .mr-track{grid-auto-columns:46%} }
+
+/* Escritorio: grilla de 3 columnas, alturas parejas por fila y pie alineado abajo */
+@media (min-width:960px){
+  .mr-reviews{padding-block:72px 80px}
+  .mr-reviews .mr-track{grid-auto-flow:row;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-columns:auto;
+    overflow:visible;scroll-snap-type:none;gap:20px;padding:0;margin:0}
+  .mr-reviews .mr-card{padding:26px 24px 22px}
+  .mr-reviews .mr-hint{display:none}
+}
+@media (prefers-reduced-motion:no-preference){ .mr-reviews .mr-track{scroll-behavior:smooth} }
+</style>
+
+  <div class="mr-inner">
+    <!-- Etiqueta de vista previa: sacala cuando cargues reseñas reales -->
+    <div class="mr-preview">Vista previa · Reseñas de ejemplo</div>
+
+    <p class="mr-eyebrow">Guía Mi Raza · Caniches</p>
+    <h2 id="mr-reviews-title">Lo que cuentan quienes ya <em>la están usando</em></h2>
+    <p class="mr-lede">Dueños de caniches que la consultan en el día a día: para entrenar, organizar la rutina y cuidar el pelo.</p>
+
+    <ul class="mr-track" id="mr-track" aria-label="Reseñas"></ul>
+    <p class="mr-hint">Deslizá para ver más</p>
+  </div>
+
+<script>
+(function () {
+  /* ==========================================================
+     RESEÑAS · reemplazá estos datos por reseñas reales.
+     estrellas: 1 a 5 · las iniciales del avatar salen solas del nombre.
+     ========================================================== */
+  var MR_RESENAS = [
+    {
+      nombre: "Sofía Benítez", ciudad: "Buenos Aires", estrellas: 5,
+      titulo: "El “vení” dejó de ser un caos",
+      texto: "Lo que más me sirvió fue arrancar el “vení” adentro de casa, con pocas distracciones, como propone la guía. Con Lola practicamos cinco minutos por día y recién después de unas semanas lo probamos en la plaza. Todavía se distrae con otros perros, pero ahora sé cómo retomarlo."
+    },
+    {
+      nombre: "Martín Ferreyra", ciudad: "Córdoba", estrellas: 5,
+      titulo: "Ordenó nuestras primeras semanas",
+      texto: "Trajimos a Toto con nueve semanas y no sabíamos por dónde empezar. El plan semana por semana nos ayudó a no querer enseñarle todo junto."
+    },
+    {
+      nombre: "Valentina Ríos", ciudad: "Rosario", estrellas: 4,
+      titulo: "Muy útil, le sumaría más fotos",
+      texto: "La parte de cepillado está bien explicada y me animé a hacerlo en sesiones cortas, con premio al final. Le agregaría más fotos del paso a paso: con el pelo enrulado me costó entender cómo separar los mechones."
+    },
+    {
+      nombre: "Lucas Moreno", ciudad: "Mendoza", estrellas: 5,
+      titulo: "Salir a pasear ya no es una pelea",
+      texto: "Antes, agarrar la correa era sinónimo de saltos y ladridos. Armamos la rutina previa a la salida y de a poco Coco aprendió a esperar sentado. Nos llevó tiempo, pero valió la pena."
+    },
+    {
+      nombre: "Carolina Giménez", ciudad: "La Plata", estrellas: 5,
+      titulo: "Premios más chicos, sesiones más largas",
+      texto: "No sabía que para un perro de su tamaño los premios tenían que ser tan chiquitos. Cambié eso y ahora Mora entrena más rato sin llenarse."
+    },
+    {
+      nombre: "Diego Acosta", ciudad: "Mar del Plata", estrellas: 5,
+      titulo: "La consulto cada vez que dudo",
+      texto: "La tengo guardada en el celular y la abro cuando me surge algo nuevo con Rulo. Está escrita sin vueltas, con ejemplos parecidos a lo que nos pasa en casa."
+    }
+  ];
+
+  function iniciales(nombre) {
+    return nombre.trim().split(/\s+/).slice(0, 2).map(function (p) { return p.charAt(0); }).join("").toUpperCase();
+  }
+  function esc(s) {
+    return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; });
+  }
+  function estrellas(n) {
+    var h = "";
+    for (var i = 1; i <= 5; i++) h += '<span' + (i > n ? ' class="off"' : '') + '>★</span>';
+    return '<div class="mr-stars" role="img" aria-label="' + n + ' de 5 estrellas">' + h + '</div>';
+  }
+
+  var track = document.getElementById("mr-track");
+  track.innerHTML = MR_RESENAS.map(function (r) {
+    return '<li class="mr-card">' +
+      estrellas(r.estrellas) +
+      '<h3>' + esc(r.titulo) + '</h3>' +
+      '<p>' + esc(r.texto) + '</p>' +
+      '<div class="mr-who"><div class="mr-av" aria-hidden="true">' + esc(iniciales(r.nombre)) + '</div>' +
+      '<div><div class="mr-name">' + esc(r.nombre) + '</div><div class="mr-city">' + esc(r.ciudad) + '</div></div></div>' +
+      '</li>';
+  }).join("");
+})();
+</script>
+</section>
+
+</body>
+</html>
