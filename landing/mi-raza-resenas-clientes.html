@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Mi Raza · Reseñas de clientes</title>
+<style>body{margin:0;background:#F6F1E4}</style>
+</head>
+<body>
+<!-- =====================================================================
+     MI RAZA · RESEÑAS DE CLIENTES
+     Para la landing: copiá desde "INICIO BLOQUE" hasta "FIN BLOQUE" y
+     pegalo donde quieras que aparezcan las reseñas. No reemplaza ni toca
+     otras secciones. Todo el CSS está scoped bajo .mr-rs. Sin JavaScript.
+
+     CÓMO CARGAR UNA RESEÑA
+       1. Buscá una tarjeta <li class="mr-rc" hidden>.
+       2. Completá estrellas, nombre, ciudad, foto y comentario.
+       3. Borrá la palabra  hidden  de esa etiqueta <li>.
+     Las tarjetas que siguen con "hidden" no se ven en la página.
+     Si no hay ninguna tarjeta visible, la sección entera se oculta sola.
+
+     ESTRELLAS: copiá la línea que corresponda.
+       5 → <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+       4 → <span>★</span><span>★</span><span>★</span><span>★</span><span class="off">★</span>
+       3 → <span>★</span><span>★</span><span>★</span><span class="off">★</span><span class="off">★</span>
+       (y ajustá aria-label="5 de 5 estrellas" con el número real)
+
+     FOTO: subí la imagen a tu tienda o a la plataforma y pegá su URL en src.
+     Si un cliente no mandó foto, borrá el bloque <figure> completo: la
+     tarjeta se acomoda sola.
+
+     COMPRA VERIFICADA: dejala solo si podés comprobar la compra.
+     ===================================================================== -->
+
+<!-- ============================ INICIO BLOQUE ============================ -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700;800&display=swap">
+<style>
+.mr-rs{
+  --mr-cream:#F6F1E4; --mr-card:#FFFDF8; --mr-ink:#123F42; --mr-ink-soft:#4A6B6C;
+  --mr-line:#E3DCC8; --mr-lime:#C8E05A; --mr-lime-soft:#EEF5CF;
+  --mr-display:"Fraunces",Georgia,"Times New Roman",serif;
+  --mr-body:"Nunito Sans","Segoe UI",Arial,sans-serif;
+  --mr-gut:max(16px,env(safe-area-inset-left,0px));
+  background:var(--mr-cream);color:var(--mr-ink);font-family:var(--mr-body);
+  -webkit-font-smoothing:antialiased;overflow:hidden;box-sizing:border-box;
+}
+.mr-rs *,.mr-rs *::before,.mr-rs *::after{box-sizing:border-box}
+/* Se oculta sola si no hay ninguna reseña publicada */
+.mr-rs:not(:has(.mr-rc:not([hidden]))){display:none}
+.mr-rs [hidden]{display:none!important}
+
+.mr-rs .mr-wrap{max-width:1160px;margin:0 auto;padding:56px var(--mr-gut) 60px}
+.mr-rs .mr-head{display:flex;flex-direction:column;gap:20px;margin-bottom:28px}
+.mr-rs .mr-eyebrow{display:inline-flex;align-items:center;gap:8px;margin:0 0 12px;font-size:12.5px;font-weight:800;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--mr-ink-soft)}
+.mr-rs .mr-eyebrow::before{content:"";width:22px;height:2px;border-radius:2px;background:var(--mr-lime)}
+.mr-rs h2{font-family:var(--mr-display);font-weight:700;font-size:clamp(28px,20px + 2.6vw,44px);line-height:1.1;
+  letter-spacing:-.01em;margin:0;max-width:18ch;text-wrap:balance}
+.mr-rs h2 em{font-style:normal;background:linear-gradient(transparent 60%,var(--mr-lime) 60%,var(--mr-lime) 92%,transparent 92%)}
+
+/* Resumen de valoración */
+.mr-rs .mr-sum{display:flex;align-items:center;gap:16px;align-self:flex-start;background:var(--mr-card);
+  border:1px solid var(--mr-line);border-radius:18px;padding:14px 20px;
+  box-shadow:0 10px 24px -20px rgba(18,63,66,.4)}
+.mr-rs .mr-sum-n{font-family:var(--mr-display);font-weight:700;font-size:40px;line-height:1}
+.mr-rs .mr-sum small{display:block;margin-top:4px;font-size:13px;color:var(--mr-ink-soft)}
+
+.mr-rs .mr-stars{display:flex;gap:2px;color:var(--mr-ink);font-size:16px;line-height:1;letter-spacing:1px}
+.mr-rs .mr-stars .off{color:var(--mr-line)}
+
+/* Celular: carrusel con scroll-snap */
+.mr-rs .mr-list{list-style:none;margin:0 calc(-1 * var(--mr-gut));padding:4px var(--mr-gut) 14px;
+  scroll-padding-left:var(--mr-gut);display:grid;grid-auto-flow:column;grid-auto-columns:84%;gap:14px;
+  align-items:start;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.mr-rs .mr-list::-webkit-scrollbar{display:none}
+
+.mr-rs .mr-rc{scroll-snap-align:start;min-width:0;background:var(--mr-card);border:1px solid var(--mr-line);
+  border-radius:20px;overflow:hidden;display:flex;flex-direction:column;
+  box-shadow:0 1px 0 rgba(18,63,66,.04),0 12px 26px -20px rgba(18,63,66,.4)}
+.mr-rs .mr-ph{margin:0;aspect-ratio:4/3;background:var(--mr-lime-soft);overflow:hidden}
+.mr-rs .mr-ph img{display:block;width:100%;height:100%;object-fit:cover}
+.mr-rs .mr-body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:12px}
+.mr-rs .mr-row{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.mr-rs .mr-ok{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:700;color:var(--mr-ink-soft)}
+.mr-rs .mr-ok::before{content:"✓";display:grid;place-items:center;width:16px;height:16px;border-radius:50%;
+  background:var(--mr-lime);color:var(--mr-ink);font-size:10px;font-weight:800}
+.mr-rs .mr-txt{margin:0;font-size:15.5px;line-height:1.62;color:var(--mr-ink);white-space:pre-line}
+.mr-rs .mr-who{display:flex;flex-direction:column;gap:1px;padding-top:12px;border-top:1px solid var(--mr-line)}
+.mr-rs .mr-name{font-weight:800;font-size:15px}
+.mr-rs .mr-city{font-size:13px;color:var(--mr-ink-soft)}
+.mr-rs .mr-hint{display:flex;align-items:center;gap:8px;margin:4px 0 0;font-size:13px;font-weight:600;color:var(--mr-ink-soft)}
+.mr-rs .mr-hint::after{content:"→";font-weight:800}
+
+@media (min-width:640px){ .mr-rs .mr-list{grid-auto-columns:46%} }
+/* Escritorio: mampostería de 3 columnas (respeta los distintos largos de texto) */
+@media (min-width:980px){
+  .mr-rs .mr-wrap{padding-top:84px;padding-bottom:88px}
+  .mr-rs .mr-head{flex-direction:row;align-items:flex-end;justify-content:space-between;margin-bottom:36px}
+  .mr-rs .mr-sum{align-self:auto}
+  .mr-rs .mr-list{display:block;columns:3;column-gap:20px;overflow:visible;margin:0;padding:0;scroll-snap-type:none}
+  .mr-rs .mr-rc{break-inside:avoid;margin:0 0 20px}
+  .mr-rs .mr-hint{display:none}
+}
+</style>
+
+<section class="mr-rs" aria-labelledby="mr-rs-title">
+  <div class="mr-wrap">
+    <div class="mr-head">
+      <div>
+        <p class="mr-eyebrow">Reseñas de clientes</p>
+        <h2 id="mr-rs-title">Lo que cuentan quienes ya <em>tienen la guía</em></h2>
+      </div>
+      <!-- Resumen: borrá "hidden" y completá con el promedio y la cantidad REALES -->
+      <div class="mr-sum" hidden>
+        <span class="mr-sum-n">PROMEDIO</span>
+        <div>
+          <div class="mr-stars" role="img" aria-label="Promedio de valoración"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <small>Basado en 00 reseñas</small>
+        </div>
+      </div>
+    </div>
+
+    <ul class="mr-list" aria-label="Reseñas de clientes">
+      <!-- ===== Reseña 1 ===== -->
+      <li class="mr-rc" hidden>
+        <figure class="mr-ph"><img src="URL_FOTO" alt="El caniche de NOMBRE" loading="lazy" width="800" height="600"></figure>
+        <div class="mr-body">
+          <div class="mr-row">
+            <div class="mr-stars" role="img" aria-label="5 de 5 estrellas"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            <span class="mr-ok">Compra verificada</span>
+          </div>
+          <p class="mr-txt">COMENTARIO</p>
+          <div class="mr-who"><span class="mr-name">NOMBRE</span><span class="mr-city">CIUDAD, PROVINCIA</span></div>
+        </div>
+      </li>
+      <!-- ===== Reseña 2 ===== -->
+      <li class="mr-rc" hidden>
+        <figure class="mr-ph"><img src="URL_FOTO" alt="El caniche de NOMBRE" loading="lazy" width="800" height="600"></figure>
+        <div class="mr-body">
+          <div class="mr-row">
+            <div class="mr-stars" role="img" aria-label="5 de 5 estrellas"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            <span class="mr-ok">Compra verificada</span>
+          </div>
+          <p class="mr-txt">COMENTARIO</p>
+          <div class="mr-who"><span class="mr-name">NOMBRE</span><span class="mr-city">CIUDAD, PROVINCIA</span></div>
+        </div>
+      </li>
+      <!-- ===== Reseña 3 ===== -->
+      <li class="mr-rc" hidden>
+        <figure class="mr-ph"><img src="URL_FOTO" alt="El caniche de NOMBRE" loading="lazy" width="800" height="600"></figure>
+        <div class="mr-body">
+          <div class="mr-row">
+            <div class="mr-stars" role="img" aria-label="5 de 5 estrellas"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            <span class="mr-ok">Compra verificada</span>
+          </div>
+          <p class="mr-txt">COMENTARIO</p>
+          <div class="mr-who"><span class="mr-name">NOMBRE</span><span class="mr-city">CIUDAD, PROVINCIA</span></div>
+        </div>
+      </li>
+      <!-- ===== Reseña 4 ===== -->
+      <li class="mr-rc" hidden>
+        <figure class="mr-ph"><img src="URL_FOTO" alt="El caniche de NOMBRE" loading="lazy" width="800" height="600"></figure>
+        <div class="mr-body">
+          <div class="mr-row">
+            <div class="mr-stars" role="img" aria-label="5 de 5 estrellas"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            <span class="mr-ok">Compra verificada</span>
+          </div>
+          <p class="mr-txt">COMENTARIO</p>
+          <div class="mr-who"><span class="mr-name">NOMBRE</span><span class="mr-city">CIUDAD, PROVINCIA</span></div>
+        </div>
+      </li>
+      <!-- ===== Reseña 5 ===== -->
+      <li class="mr-rc" hidden>
+        <figure class="mr-ph"><img src="URL_FOTO" alt="El caniche de NOMBRE" loading="lazy" width="800" height="600"></figure>
+        <div class="mr-body">
+          <div class="mr-row">
+            <div class="mr-stars" role="img" aria-label="5 de 5 estrellas"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            <span class="mr-ok">Compra verificada</span>
+          </div>
+          <p class="mr-txt">COMENTARIO</p>
+          <div class="mr-who"><span class="mr-name">NOMBRE</span><span class="mr-city">CIUDAD, PROVINCIA</span></div>
+        </div>
+      </li>
+      <!-- ===== Reseña 6 ===== -->
+      <li class="mr-rc" hidden>
+        <figure class="mr-ph"><img src="URL_FOTO" alt="El caniche de NOMBRE" loading="lazy" width="800" height="600"></figure>
+        <div class="mr-body">
+          <div class="mr-row">
+            <div class="mr-stars" role="img" aria-label="5 de 5 estrellas"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            <span class="mr-ok">Compra verificada</span>
+          </div>
+          <p class="mr-txt">COMENTARIO</p>
+          <div class="mr-who"><span class="mr-name">NOMBRE</span><span class="mr-city">CIUDAD, PROVINCIA</span></div>
+        </div>
+      </li>
+      <!-- Para más reseñas, duplicá cualquiera de los bloques <li> de arriba -->
+    </ul>
+    <p class="mr-hint">Deslizá para ver más reseñas</p>
+  </div>
+</section>
+<!-- ============================= FIN BLOQUE ============================= -->
+</body>
+</html>
