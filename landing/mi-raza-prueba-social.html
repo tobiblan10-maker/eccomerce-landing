@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Mi Raza · Prueba social</title>
+<style>body{margin:0;background:#F6F1E4}</style>
+</head>
+<body>
+<!-- =====================================================================
+     MI RAZA · PRUEBA SOCIAL
+     Para la landing: copiá desde "INICIO BLOQUE" hasta "FIN BLOQUE" y
+     pegalo en el lugar de la sección de prueba social actual.
+     Todo el CSS está scoped bajo .mr-sp: no afecta al resto de la página.
+     No usa JavaScript.
+     ===================================================================== -->
+
+<!-- ============================ INICIO BLOQUE ============================ -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700;800&display=swap">
+<style>
+.mr-sp{
+  --mr-cream:#F6F1E4; --mr-card:#FFFDF8; --mr-ink:#123F42; --mr-ink-soft:#4A6B6C;
+  --mr-line:#E3DCC8; --mr-lime:#C8E05A; --mr-lime-soft:#EEF5CF;
+  --mr-display:"Fraunces",Georgia,"Times New Roman",serif;
+  --mr-body:"Nunito Sans","Segoe UI",Arial,sans-serif;
+  --mr-gut:max(16px,env(safe-area-inset-left,0px));
+  background:var(--mr-cream);color:var(--mr-ink);font-family:var(--mr-body);
+  -webkit-font-smoothing:antialiased;overflow:hidden;box-sizing:border-box;
+}
+.mr-sp *,.mr-sp *::before,.mr-sp *::after{box-sizing:border-box}
+.mr-sp .mr-wrap{max-width:1160px;margin:0 auto;padding:56px var(--mr-gut) 64px}
+.mr-sp .mr-eyebrow{display:inline-flex;align-items:center;gap:8px;margin:0 0 14px;font-size:12.5px;font-weight:800;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--mr-ink-soft)}
+.mr-sp .mr-eyebrow::before{content:"";width:22px;height:2px;border-radius:2px;background:var(--mr-lime)}
+.mr-sp h2{font-family:var(--mr-display);font-weight:700;font-size:clamp(28px,20px + 2.6vw,44px);line-height:1.1;
+  letter-spacing:-.01em;margin:0 0 14px;max-width:20ch;text-wrap:balance}
+.mr-sp h2 em{font-style:normal;background:linear-gradient(transparent 60%,var(--mr-lime) 60%,var(--mr-lime) 92%,transparent 92%)}
+.mr-sp .mr-lede{margin:0 0 30px;font-size:16.5px;line-height:1.6;color:var(--mr-ink-soft);max-width:58ch}
+
+/* ---------- Tarjetas de situaciones ---------- */
+.mr-sp .mr-grid{list-style:none;margin:0 calc(-1 * var(--mr-gut));padding:4px var(--mr-gut) 14px;
+  scroll-padding-left:var(--mr-gut);display:grid;grid-auto-flow:column;grid-auto-columns:82%;gap:14px;
+  overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.mr-sp .mr-grid::-webkit-scrollbar{display:none}
+.mr-sp .mr-card{scroll-snap-align:start;position:relative;display:flex;flex-direction:column;gap:14px;min-width:0;
+  background:var(--mr-card);border:1px solid var(--mr-line);border-radius:18px;padding:22px 20px 20px;
+  box-shadow:0 1px 0 rgba(18,63,66,.04),0 10px 24px -18px rgba(18,63,66,.35);
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.mr-sp .mr-top{display:flex;align-items:center;gap:12px}
+.mr-sp .mr-ic{width:42px;height:42px;flex:none;border-radius:12px;display:grid;place-items:center;
+  background:var(--mr-ink);color:var(--mr-lime)}
+.mr-sp .mr-ic svg{width:22px;height:22px}
+.mr-sp .mr-tag{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--mr-ink-soft)}
+.mr-sp .mr-quote{margin:0;font-family:var(--mr-display);font-weight:600;font-size:18.5px;line-height:1.35;color:var(--mr-ink)}
+.mr-sp .mr-quote::before{content:"“";color:var(--mr-lime);margin-right:1px}
+.mr-sp .mr-quote::after{content:"”";color:var(--mr-lime);margin-left:1px}
+.mr-sp .mr-text{margin:0;font-size:15px;line-height:1.6;color:var(--mr-ink-soft)}
+.mr-sp .mr-key{margin-top:auto;padding:12px 14px;border-radius:12px;background:var(--mr-lime-soft);
+  font-size:14px;line-height:1.5;color:var(--mr-ink)}
+.mr-sp .mr-key b{display:block;font-size:11.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:2px}
+.mr-sp .mr-hint{display:flex;align-items:center;gap:8px;margin:4px 0 0;font-size:13px;font-weight:600;color:var(--mr-ink-soft)}
+.mr-sp .mr-hint::after{content:"→";font-weight:800}
+
+/* Cierre: puente hacia la compra */
+.mr-sp .mr-bridge{margin:34px 0 0;display:flex;flex-direction:column;gap:14px;align-items:flex-start;
+  background:var(--mr-ink);color:#F6F1E4;border-radius:20px;padding:24px 22px}
+.mr-sp .mr-bridge p{margin:0;font-size:16px;line-height:1.6;max-width:62ch;color:rgba(246,241,228,.86)}
+.mr-sp .mr-bridge strong{display:block;font-family:var(--mr-display);font-weight:700;font-size:22px;line-height:1.25;
+  color:#F6F1E4;margin-bottom:6px}
+.mr-sp .mr-bridge strong em{font-style:normal;color:var(--mr-lime)}
+.mr-sp .mr-note{margin:16px 0 0;font-size:12.5px;line-height:1.5;color:var(--mr-ink-soft);opacity:.85}
+
+/* ---------- Reseñas (se muestran solo cuando hay testimonios reales) ---------- */
+.mr-sp .mr-reviews{border-top:1px solid var(--mr-line)}
+.mr-sp .mr-reviews[hidden]{display:none}
+.mr-sp .mr-rv-head{display:flex;flex-direction:column;gap:18px;margin-bottom:26px}
+.mr-sp .mr-summary{display:inline-flex;align-items:center;gap:14px;align-self:flex-start;background:var(--mr-card);
+  border:1px solid var(--mr-line);border-radius:16px;padding:14px 18px}
+.mr-sp .mr-summary .mr-avg{font-family:var(--mr-display);font-weight:700;font-size:34px;line-height:1}
+.mr-sp .mr-summary small{display:block;font-size:13px;color:var(--mr-ink-soft);margin-top:3px}
+.mr-sp .mr-stars{display:flex;gap:2px;color:var(--mr-ink);font-size:16px;letter-spacing:1px;line-height:1}
+.mr-sp .mr-stars .off{color:var(--mr-line)}
+.mr-sp .mr-rv{background:var(--mr-card);border:1px solid var(--mr-line);border-radius:18px;padding:22px 20px 20px;
+  display:flex;flex-direction:column;gap:12px;min-width:0;scroll-snap-align:start}
+.mr-sp .mr-rv h3{margin:0;font-family:var(--mr-display);font-weight:600;font-size:19px;line-height:1.3}
+.mr-sp .mr-rv p{margin:0;font-size:15px;line-height:1.62}
+.mr-sp .mr-who{margin-top:auto;padding-top:14px;border-top:1px solid var(--mr-line);display:flex;align-items:center;gap:12px}
+.mr-sp .mr-av{width:40px;height:40px;flex:none;border-radius:50%;display:grid;place-items:center;
+  background:var(--mr-ink);color:var(--mr-lime);font-weight:800;font-size:14px}
+.mr-sp .mr-name{font-weight:700;font-size:15px;line-height:1.2}
+.mr-sp .mr-meta{font-size:13px;color:var(--mr-ink-soft)}
+.mr-sp .mr-verified{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:700;color:var(--mr-ink)}
+.mr-sp .mr-verified::before{content:"✓";display:grid;place-items:center;width:16px;height:16px;border-radius:50%;
+  background:var(--mr-lime);font-size:10px}
+
+@media (min-width:640px){
+  .mr-sp .mr-grid{grid-auto-columns:46%}
+  .mr-sp .mr-bridge{flex-direction:row;align-items:center;justify-content:space-between;padding:28px 32px}
+}
+@media (min-width:980px){
+  .mr-sp .mr-wrap{padding-top:84px;padding-bottom:88px}
+  .mr-sp .mr-grid{grid-auto-flow:row;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-columns:auto;
+    overflow:visible;scroll-snap-type:none;margin:0;padding:0;gap:18px}
+  .mr-sp .mr-reviews .mr-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .mr-sp .mr-hint{display:none}
+  .mr-sp .mr-rv-head{flex-direction:row;align-items:flex-end;justify-content:space-between}
+  .mr-sp .mr-rv-head .mr-summary{align-self:auto}
+}
+@media (hover:hover) and (min-width:980px){
+  .mr-sp .mr-card:hover{transform:translateY(-3px);border-color:#CFC6AC;
+    box-shadow:0 1px 0 rgba(18,63,66,.04),0 18px 32px -20px rgba(18,63,66,.45)}
+}
+@media (prefers-reduced-motion:reduce){ .mr-sp .mr-card{transition:none} }
+@media (prefers-reduced-motion:no-preference){ .mr-sp .mr-grid{scroll-behavior:smooth} }
+</style>
+
+<section class="mr-sp" aria-labelledby="mr-sp-title">
+  <div class="mr-wrap">
+    <p class="mr-eyebrow">Dueños de caniches</p>
+    <h2 id="mr-sp-title">¿Te identificás con alguna de estas <em>situaciones</em>?</h2>
+    <p class="mr-lede">Son cosas que pasan en muchísimas casas con un caniche. No significa que estés haciendo todo mal: casi siempre falta una guía clara y un poco de constancia.</p>
+
+    <ul class="mr-grid" aria-label="Situaciones frecuentes">
+      <!-- 1 · Ladridos -->
+      <li class="mr-card">
+        <div class="mr-top">
+          <span class="mr-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg></span>
+          <span class="mr-tag">Ladridos</span>
+        </div>
+        <p class="mr-quote">Suena el timbre y se arma un escándalo que no hay forma de cortar.</p>
+        <p class="mr-text">Ladra a la puerta, al ascensor, a la moto que pasa. Los vecinos ya te miraron raro más de una vez y retarlo no cambia nada.</p>
+        <p class="mr-key"><b>Por qué pasa</b>Un ladrido de alerta que se fue reforzando sin querer. Se trabaja anticipando el estímulo, no gritando más fuerte.</p>
+      </li>
+      <!-- 2 · Ansiedad por separación -->
+      <li class="mr-card">
+        <div class="mr-top">
+          <span class="mr-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/></svg></span>
+          <span class="mr-tag">Ansiedad por separación</span>
+        </div>
+        <p class="mr-quote">Cada vez que salgo, me voy con culpa y con el llanto de fondo.</p>
+        <p class="mr-text">Llora, rasca la puerta o te recibe como si hubieras estado afuera una semana. Y vos terminás reorganizando tu día para no dejarlo solo.</p>
+        <p class="mr-key"><b>Por qué pasa</b>Un perro muy apegado que nunca aprendió a estar tranquilo solo. Se enseña de a poco, con ausencias cortas y salidas sin drama.</p>
+      </li>
+      <!-- 3 · Entrenamiento -->
+      <li class="mr-card">
+        <div class="mr-top">
+          <span class="mr-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r=".6" fill="currentColor"/></svg></span>
+          <span class="mr-tag">Entrenamiento</span>
+        </div>
+        <p class="mr-quote">En casa se sienta perfecto. En la plaza, es como si no me conociera.</p>
+        <p class="mr-text">Viste videos, probaste trucos y algo aprende, pero afuera se olvida de todo y el “vení” pasa a ser una sugerencia.</p>
+        <p class="mr-key"><b>Por qué pasa</b>Saltar de golpe a lugares con muchas distracciones. Los caniches aprenden rápido cuando se avanza por etapas.</p>
+      </li>
+      <!-- 4 · Comportamiento -->
+      <li class="mr-card">
+        <div class="mr-top">
+          <span class="mr-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14c2-6 6-6 8-2s6 4 8-2"/><path d="M4 19h16"/></svg></span>
+          <span class="mr-tag">Comportamiento</span>
+        </div>
+        <p class="mr-quote">Muerde los cables, salta encima de las visitas y no hay “no” que valga.</p>
+        <p class="mr-text">Es un amor, pero hay momentos en los que no sabés si es un juego, una falta de límites o algo que tendría que preocuparte.</p>
+        <p class="mr-key"><b>Por qué pasa</b>Energía sin canalizar y reglas que cambian según quién esté en casa. Con coherencia, la mayoría de estas conductas bajan.</p>
+      </li>
+      <!-- 5 · Alimentación -->
+      <li class="mr-card">
+        <div class="mr-top">
+          <span class="mr-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"/><path d="M5 12a7 7 0 0 0 14 0"/><path d="M9 4c0 2 2 2 2 4M14 4c0 2 2 2 2 4"/></svg></span>
+          <span class="mr-tag">Alimentación</span>
+        </div>
+        <p class="mr-quote">Un día come bárbaro, al otro deja todo el plato y me quedo pensando qué hice mal.</p>
+        <p class="mr-text">Cuánto darle, cada cuánto, qué alimento, si está bien un poquito de lo tuyo… Cada persona te dice una cosa distinta.</p>
+        <p class="mr-key"><b>Por qué pasa</b>Porciones pensadas para otro tamaño y extras que suman más de lo que parece. Ordenar horarios ya cambia mucho.</p>
+      </li>
+      <!-- 6 · Pelo -->
+      <li class="mr-card">
+        <div class="mr-top">
+          <span class="mr-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20 14 10"/><path d="M12 8l4-4 4 4-4 4z"/><path d="M15 5l4 4"/></svg></span>
+          <span class="mr-tag">Cuidado del pelo</span>
+        </div>
+        <p class="mr-quote">Lo baño, lo cepillo, y a la semana tiene nudos otra vez.</p>
+        <p class="mr-text">El pelo del caniche no se parece al de ningún otro perro. Encima, cuando ve el cepillo sale corriendo y terminás desistiendo.</p>
+        <p class="mr-key"><b>Por qué pasa</b>Un cepillado que no llega a la raíz y sesiones largas que lo estresan. Mejor cortas, frecuentes y con premio.</p>
+      </li>
+      <!-- 7 · Errores de crianza -->
+      <li class="mr-card">
+        <div class="mr-top">
+          <span class="mr-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0-3.5 10.9V16h7v-2.1A6 6 0 0 0 12 3z"/><path d="M9.5 20h5"/></svg></span>
+          <span class="mr-tag">Crianza</span>
+        </div>
+        <p class="mr-quote">Ojalá alguien me hubiera explicado todo esto cuando era cachorro.</p>
+        <p class="mr-text">Lo dejabas subir a la cama, le dabas comida en la mesa porque era chiquito… y hoy esos “por esta vez” son la norma.</p>
+        <p class="mr-key"><b>Por qué pasa</b>Hábitos que se instalan sin darnos cuenta. Nunca es tarde: un caniche adulto también aprende reglas nuevas.</p>
+      </li>
+      <!-- 8 · Rutinas -->
+      <li class="mr-card">
+        <div class="mr-top">
+          <span class="mr-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <span class="mr-tag">Rutinas</span>
+        </div>
+        <p class="mr-quote">Entre el trabajo y todo lo demás, sus horarios son un caos.</p>
+        <p class="mr-text">Paseos cuando se puede, comida a cualquier hora, pis donde no tiene que ser. Sentís que él también está desorientado.</p>
+        <p class="mr-key"><b>Por qué pasa</b>La falta de previsibilidad. Una rutina simple y sostenible le da calma a él y te ordena a vos.</p>
+      </li>
+    </ul>
+    <p class="mr-hint">Deslizá para ver más situaciones</p>
+
+    <div class="mr-bridge">
+      <p><strong>Si te reconociste en alguna, <em>no estás solo</em>.</strong>Las guías de Mi Raza están pensadas para dueños de caniches como vos: explicaciones claras, paso a paso y adaptadas a cómo es la raza.</p>
+    </div>
+    <p class="mr-note">Las situaciones de esta sección son ejemplos de experiencias frecuentes entre dueños de caniches. No corresponden a opiniones de clientes.</p>
+  </div>
+
+  <!-- ==================================================================
+       RESEÑAS DE CLIENTES
+       Esta parte está oculta (atributo "hidden") hasta que tengas
+       testimonios reales. Para activarla:
+         1. Borrá la palabra hidden de la etiqueta <div class="mr-reviews" ...>.
+         2. Duplicá el bloque <li class="mr-rv"> una vez por reseña real.
+         3. Estrellas: dejá en ★ las que puso la persona y usá
+            <span class="off">★</span> para las que faltan.
+         4. Mostrá "Compra verificada" solo si podés comprobar la compra;
+            si no, borrá esa línea.
+         5. El resumen (promedio y cantidad) va solo cuando tengas varias
+            reseñas; calculalo con los datos reales o borrá ese bloque.
+       ================================================================== -->
+  <div class="mr-reviews" hidden>
+    <div class="mr-wrap">
+      <div class="mr-rv-head">
+        <div>
+          <p class="mr-eyebrow">Reseñas</p>
+          <h2>Lo que cuentan quienes ya <em>tienen la guía</em></h2>
+        </div>
+        <!-- Resumen: completar con datos reales o borrar -->
+        <div class="mr-summary">
+          <span class="mr-avg">[PROMEDIO]</span>
+          <div>
+            <div class="mr-stars" aria-hidden="true">★★★★★</div>
+            <small>Basado en [CANTIDAD] reseñas</small>
+          </div>
+        </div>
+      </div>
+
+      <ul class="mr-grid" aria-label="Reseñas de clientes">
+        <!-- Plantilla de una reseña: duplicar por cada testimonio real -->
+        <li class="mr-rv">
+          <div class="mr-stars" role="img" aria-label="[N] de 5 estrellas">★★★★★</div>
+          <h3>[Título breve de la reseña]</h3>
+          <p>[Texto de la reseña, tal como lo escribió la persona]</p>
+          <div class="mr-who">
+            <div class="mr-av" aria-hidden="true">[IN]</div>
+            <div>
+              <div class="mr-name">[Nombre y primera letra del apellido]</div>
+              <div class="mr-meta">[Ciudad]</div>
+              <span class="mr-verified">Compra verificada</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <p class="mr-hint">Deslizá para ver más reseñas</p>
+    </div>
+  </div>
+</section>
+<!-- ============================= FIN BLOQUE ============================= -->
+</body>
+</html>
